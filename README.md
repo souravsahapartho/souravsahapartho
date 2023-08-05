@@ -5,7 +5,7 @@ I'm [Sourav Saha](https://www.souravsaha.me)
 
 First of all thanks for viewing my profile.
 A person full of new generation, energy to learn, develop, practice, make mistakes and achieve goals.
-I am still a student. Some are still loading, stay tuned my friend.
+I am still a student. Some are still loading, stay tuned my friend!
 
 Skils: Wordpress / Google Sites / Mailchimp / Facebook Marketing
 
