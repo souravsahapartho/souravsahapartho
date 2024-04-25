@@ -7,7 +7,7 @@ First of all thanks for viewing my profile.
 A person full of new generation, energy to learn, develop, practice, make mistakes and achieve goals.
 I am still a student. Some are still loading, stay tuned my friend!
 
-Skils: Wordpress / Google Sites / Mailchimp / Facebook Marketing
+Skils: C Programming / Google Sites / Mailchimp / Facebook Marketing
 
 - 🌱 I’m currently learning...
 - 👯 I’m looking to collaborate on Github 
@@ -20,6 +20,6 @@ Skils: Wordpress / Google Sites / Mailchimp / Facebook Marketing
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=souravsahapartho&show_icons=true)  
 
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=souravsahapartho)  
+![GitHub Activity Graph]([https://activity-graph.herokuapp.com/graph?username=souravsahapartho](https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&bg_color=ffffff&color=000000&line=000000&point=0000ff&area=true&hide_border=true))  
 
 
