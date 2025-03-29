@@ -1,4 +1,4 @@
-# [Sourav Saha](https://www.souravsaha.me)
+# [Sourav Saha](https://www.linkedin.com/in/souravsahapartho)
 
 ### Hi there 👋, I'm Sourav Saha  
 #### Aspiring Computer Scientist | Lifelong Learner  
@@ -33,7 +33,7 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
     <img src="https://i.postimg.cc/JhkWw07w/instagram-2.png" alt="Instagram" width="50" height="50"/>
   </a>
   <a href="https://linkedin.com/in/souravsahapartho" target="_blank">
-    <img src="https://ibb.co.com/qL6hXFWk" alt="LinkedIn" width="50" height="50"/>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF1SDRBvgfZtp7smzqHVpMKLRvmnHGWTFjqzOH17OEkuqhE4_4ZHV2cgBKy2tYeRao5C3YZq4uYMbS50hZZfpoPqrLyQ9WraEDTXD7AufF5J4rm_teTQVAjDt5L-TSgjlCaj4fdLV99WER9KKVDDzG5yFk8CPwDoTLmVTgDUsNBz3kq6UnAsM3IZ4gBzM/s512/linkedin%20(2).png" alt="LinkedIn" width="50" height="50"/>
   </a>
   <a href="https://x.com/souravpartho" target="_blank">
     <img src="https://i.postimg.cc/76gqjSKc/twitter.png" alt="X (formerly Twitter)" width="50" height="50"/>
