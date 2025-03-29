@@ -40,22 +40,17 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
   <a href="https://www.souravsaha.me" target="_blank">
     <img src="https://i.postimg.cc/NFL2D6NG/web.png" alt="Website" width="50" height="50"/>
   </a>
-  <a href="https://codepen.io/souravsaha" target="_blank">
-    <img src="https://i.postimg.cc/02Py9dGz/IMG-20230806-024629-modified.png" alt="CodePen" width="50" height="50"/>
-  </a>
 </div>
 
 ---
 
 ### 📊 GitHub Stats  
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=radical&langs_count=6&hide=python,javascript)](https://github.com/souravsahapartho/github-readme-stats)  
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=radical&langs_count=8)](https://github.com/souravsahapartho/github-readme-stats)  
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=souravsahapartho&show_icons=true&theme=radical)  
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&bg_color=ffffff&color=000000&line=ff6347&point=0000ff&area=true&hide_border=true)  
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&theme=radical&bg_color=ffffff&color=000000&line=ff6347&point=0000ff&area=true&hide_border=true)  
 
 ---
 
 ✨ Keep exploring, keep growing, and stay curious!  
-
-
