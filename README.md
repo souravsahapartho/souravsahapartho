@@ -1,7 +1,7 @@
 # [Sourav Saha](https://www.linkedin.com/in/souravsahapartho)
 
 ### Hi there 👋, I'm Sourav Saha  
-#### Aspiring Computer Scientist | Lifelong Learner  
+#### Aspiring Computer Science Student | Lifelong Learner  
 
 Thank you for stopping by!  
 I'm a passionate individual who thirsts for knowledge, energy to explore, and drive to create. I love diving into new challenges, learning from mistakes, and growing. While I'm still a student, I believe the journey is just as important as the destination—stay tuned, my friend!
@@ -18,7 +18,7 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
 ### 🌱 What I'm Up To
 - 🌱 Currently learning: Advanced Programming, Web Development  
 - 👯 Looking to collaborate on: GitHub Projects  
-- 📫 How to reach me: [hello@souravsahapartho@gmail.com](mailto:souravsahapartho@gmail.com)  
+- 📫 How to reach me: [souravsahapartho@gmail.com](mailto:souravsahapartho@gmail.com)  
 
 ---
 
