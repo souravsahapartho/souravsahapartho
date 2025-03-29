@@ -23,13 +23,28 @@ I'm a passionate individual with a thirst for knowledge, energy to explore, and 
 
 ---
 
-### 🌐 Let's Connect!
-[<img src='https://i.postimg.cc/SN9K1jKH/1662964329922.png' alt='Facebook' height='40'>](https://facebook.com/souravsahapartho)  
-[<img src='https://i.postimg.cc/JhkWw07w/instagram-2.png' alt='Instagram' height='40'>](https://instagram.com/souravsahapartho)  
-[<img src='https://i.postimg.cc/3NZ3S0fh/linkedin-1.png' alt='Linkedin' height='40'>](https://linkedin.com/in/souravsahapartho)  
-[<img src='https://i.postimg.cc/76gqjSKc/twitter.png' alt='X (formerly Twitter)' height='40'>](https://x.com/souravpartho)  
-[<img src='https://i.postimg.cc/NFL2D6NG/web.png' alt='Website' height='40'>](https://www.souravsaha.me)  
-[<img src='https://i.postimg.cc/02Py9dGz/IMG-20230806-024629-modified.png' alt='Codepen' height='40'>](https://codepen.io/souravsaha)  
+### 🌐 Let's Connect!  
+
+<div align="center">
+  <a href="https://facebook.com/souravsahapartho" target="_blank">
+    <img src="https://i.postimg.cc/SN9K1jKH/1662964329922.png" alt="Facebook" width="50" height="50"/>
+  </a>
+  <a href="https://instagram.com/souravsahapartho" target="_blank">
+    <img src="https://i.postimg.cc/JhkWw07w/instagram-2.png" alt="Instagram" width="50" height="50"/>
+  </a>
+  <a href="https://linkedin.com/in/souravsahapartho" target="_blank">
+    <img src="https://i.postimg.cc/3NZ3S0fh/linkedin-1.png" alt="LinkedIn" width="50" height="50"/>
+  </a>
+  <a href="https://x.com/souravpartho" target="_blank">
+    <img src="https://i.postimg.cc/76gqjSKc/twitter.png" alt="X (formerly Twitter)" width="50" height="50"/>
+  </a>
+  <a href="https://www.souravsaha.me" target="_blank">
+    <img src="https://i.postimg.cc/NFL2D6NG/web.png" alt="Website" width="50" height="50"/>
+  </a>
+  <a href="https://codepen.io/souravsaha" target="_blank">
+    <img src="https://i.postimg.cc/02Py9dGz/IMG-20230806-024629-modified.png" alt="CodePen" width="50" height="50"/>
+  </a>
+</div>
 
 ---
 
@@ -43,6 +58,5 @@ I'm a passionate individual with a thirst for knowledge, energy to explore, and 
 ---
 
 ✨ Keep exploring, keep growing, and stay curious!  
-
 
 
