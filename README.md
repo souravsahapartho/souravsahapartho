@@ -33,7 +33,7 @@ I'm a passionate individual with a thirst for knowledge, energy to explore, and 
     <img src="https://i.postimg.cc/JhkWw07w/instagram-2.png" alt="Instagram" width="50" height="50"/>
   </a>
   <a href="https://linkedin.com/in/souravsahapartho" target="_blank">
-    <img src="https://i.postimg.cc/3NZ3S0fh/linkedin-1.png" alt="LinkedIn" width="50" height="50"/>
+    <img src="https://ibb.co.com/qL6hXFWk" alt="LinkedIn" width="50" height="50"/>
   </a>
   <a href="https://x.com/souravpartho" target="_blank">
     <img src="https://i.postimg.cc/76gqjSKc/twitter.png" alt="X (formerly Twitter)" width="50" height="50"/>
