@@ -27,7 +27,7 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
 
 <div align="center">
   <a href="https://facebook.com/souravsahapartho" target="_blank">
-    <img src="[https://i.postimg.cc/SN9K1jKH/1662964329922.png](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8ug3P4x-ecI0FOGxCBdOTVgvjSHr9sVNxNSqfqS8H6ymuv1tLUlqfPReeMyR3wrhObem5nD7rZNpoXY1waKD7pM-FRmUAeW6P_RuGny9RJ1b2qm_o09XdSks_tTDnteoQ_LdiFDJ1Xz65JG-7Mr-fLHkrmGP_Z4gHX3RVWJ78QTrfTyA3GDx_Ex6SMz0/s512/facebook.png)" alt="Facebook" width="50" height="50"/>
+    <img src="https://i.postimg.cc/SN9K1jKH/1662964329922.png" alt="Facebook" width="50" height="50"/>
   </a>
   <a href="https://instagram.com/souravsahapartho" target="_blank">
     <img src="https://i.postimg.cc/JhkWw07w/instagram-2.png" alt="Instagram" width="50" height="50"/>
