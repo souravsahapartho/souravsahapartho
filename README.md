@@ -12,14 +12,13 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
 - **Programming Languages:** C, C++, Java  
 - **Web Development:** HTML, CSS  
 - **Tools:** Google Sites, Mailchimp  
-- **Marketing:** Facebook Marketing  
 
 ---
 
 ### 🌱 What I'm Up To
 - 🌱 Currently learning: Advanced Programming, Web Development  
 - 👯 Looking to collaborate on: GitHub Projects  
-- 📫 How to reach me: [hello@souravsaha.me](mailto:hello@souravsaha.me)  
+- 📫 How to reach me: [hello@souravsahapartho@gmail.com](mailto:souravsahapartho@gmail.com)  
 
 ---
 
