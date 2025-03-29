@@ -4,12 +4,13 @@
 #### Aspiring Computer Scientist | Lifelong Learner  
 
 Thank you for stopping by!  
-I'm a passionate individual who thirsts for knowledge, energy to explore, and drive to create. I love diving into new challenges, learning from mistakes, and growing. While I'm still a student, I believe the journey is just as important as the destination—stay tuned, my friend!
+I'm a passionate individual with a thirst for knowledge, energy to explore, and drive to create. I love diving into new challenges, learning from mistakes, and growing along the way. While I'm still a student, I believe the journey is just as important as the destination—stay tuned, my friend!
 
 ---
 
 ### 🛠 Skills
-- **Programming Languages:** C Programming  
+- **Programming Languages:** C, C++, Java  
+- **Web Development:** HTML, CSS  
 - **Tools:** Google Sites, Mailchimp  
 - **Marketing:** Facebook Marketing  
 
@@ -33,7 +34,7 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
 ---
 
 ### 📊 GitHub Stats  
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=radical)](https://github.com/souravsahapartho/github-readme-stats)  
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=radical&langs_count=6&hide=python,javascript)](https://github.com/souravsahapartho/github-readme-stats)  
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=souravsahapartho&show_icons=true&theme=radical)  
 
