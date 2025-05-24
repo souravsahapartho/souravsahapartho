@@ -46,7 +46,7 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
   <a href="https://x.com/souravpartho" target="_blank">
     <img src="https://i.postimg.cc/76gqjSKc/twitter.png" alt="X (formerly Twitter)" width="50" height="50"/>
   </a>
-  <a href="https://www.souravsaha.me" target="_blank">
+  <a href="https://www.sourav.com.bd" target="_blank">
     <img src="https://i.postimg.cc/NFL2D6NG/web.png" alt="Website" width="50" height="50"/>
   </a>
 </div>
