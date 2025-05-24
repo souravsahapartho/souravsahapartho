@@ -1,4 +1,4 @@
-# [Sourav Saha](https://www.linkedin.com/in/souravsahapartho)
+# [Sourav Saha](https://www.sourav.com.bd)
 
 ### Hi there 👋, I'm Sourav Saha  
 #### Aspiring Computer Science Student | Lifelong Learner  
@@ -12,7 +12,7 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
 - **Programming Languages:**  
   ![C](https://img.shields.io/badge/-C-00599C?style=flat&logo=c&logoColor=white)  
   ![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)  
-  ![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)
+  ![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)  
 
 - **Web Development:**  
   ![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
