@@ -8,10 +8,19 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
 
 ---
 
-### 🛠 Skills
-- **Programming Languages:** C, C++, Java  
-- **Web Development:** HTML, CSS  
-- **Tools:** Google Sites, Mailchimp  
+### 🛠 Languages and Tools
+- **Programming Languages:**  
+  ![C](https://img.shields.io/badge/-C-00599C?style=flat&logo=c&logoColor=white)  
+  ![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)  
+  ![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)
+
+- **Web Development:**  
+  ![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
+  ![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)  
+
+- **Tools:**  
+  ![Google Sites](https://img.shields.io/badge/-Google%20Sites-34A853?style=flat&logo=google&logoColor=white)  
+  ![Mailchimp](https://img.shields.io/badge/-Mailchimp-FFE01B?style=flat&logo=mailchimp&logoColor=black)
 
 ---
 
@@ -51,6 +60,9 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
 
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&theme=radical&bg_color=ffffff&color=000000&line=ff6347&point=0000ff&area=true&hide_border=true)  
 
+- **Contributions:** ![GitHub Contributions](https://img.shields.io/badge/Contributions-365-brightgreen?style=flat&logo=github&logoColor=white)  
+- **Current Streak:** ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=souravsahapartho&theme=radical)  
+
 ---
 
-✨ Keep exploring, keep growing, and stay curious!  
+✨ Keep exploring, keep growing, and stay curious!
