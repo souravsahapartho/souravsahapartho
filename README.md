@@ -27,7 +27,7 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
 ### 🌱 What I'm Up To
 - 🌱 Currently learning: Advanced Programming, Web Development  
 - 👯 Looking to collaborate on: GitHub Projects  
-- 📫 How to reach me: [souravsahapartho@gmail.com](mailto:souravsahapartho@gmail.com)  
+- 📫 How to reach me: [hello@sourav.com.bd](mailto:hello@sourav.com.bd)  
 
 ---
 
