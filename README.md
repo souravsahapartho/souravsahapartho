@@ -1,37 +1,45 @@
+Here's your updated profile with JavaScript added as a skill:
+
+---
+
 # [Sourav Saha](https://www.sourav.com.bd)
 
-### Hi there 👋, I'm Sourav Saha  
-#### Aspiring Computer Science Student | Lifelong Learner  
+### Hi there 👋, I'm Sourav Saha
 
-Thank you for stopping by!  
+#### Aspiring Computer Science Student | Lifelong Learner
+
+Thank you for stopping by!
 I'm a passionate individual who thirsts for knowledge, energy to explore, and drive to create. I love diving into new challenges, learning from mistakes, and growing. While I'm still a student, I believe the journey is just as important as the destination—stay tuned, my friend!
 
 ---
 
 ### 🛠 Languages and Tools
-- **Programming Languages:**  
-  ![C](https://img.shields.io/badge/-C-00599C?style=flat&logo=c&logoColor=white)  
-  ![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)  
-  ![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)  
 
-- **Web Development:**  
-  ![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
-  ![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)  
+* **Programming Languages:**
+  ![C](https://img.shields.io/badge/-C-00599C?style=flat\&logo=c\&logoColor=white)
+  ![C++](https://img.shields.io/badge/-C++-00599C?style=flat\&logo=c%2B%2B\&logoColor=white)
+  ![Java](https://img.shields.io/badge/-Java-007396?style=flat\&logo=java\&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat\&logo=javascript\&logoColor=black)
 
-- **Tools:**  
-  ![Google Sites](https://img.shields.io/badge/-Google%20Sites-34A853?style=flat&logo=google&logoColor=white)  
-  ![Mailchimp](https://img.shields.io/badge/-Mailchimp-FFE01B?style=flat&logo=mailchimp&logoColor=black)
+* **Web Development:**
+  ![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat\&logo=html5\&logoColor=white)
+  ![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat\&logo=css3\&logoColor=white)
+
+* **Tools:**
+  ![Google Sites](https://img.shields.io/badge/-Google%20Sites-34A853?style=flat\&logo=google\&logoColor=white)
+  ![Mailchimp](https://img.shields.io/badge/-Mailchimp-FFE01B?style=flat\&logo=mailchimp\&logoColor=black)
 
 ---
 
 ### 🌱 What I'm Up To
-- 🌱 Currently learning: Advanced Programming, Web Development  
-- 👯 Looking to collaborate on: GitHub Projects  
-- 📫 How to reach me: [hello@sourav.com.bd](mailto:hello@sourav.com.bd)  
+
+* 🌱 Currently learning: Advanced Programming, Web Development
+* 👯 Looking to collaborate on: GitHub Projects
+* 📫 How to reach me: [hello@sourav.com.bd](mailto:hello@sourav.com.bd)
 
 ---
 
-### 🌐 Let's Connect!  
+### 🌐 Let's Connect!
 
 <div align="center">
   <a href="https://facebook.com/souravsahapartho" target="_blank">
@@ -53,15 +61,16 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
 
 ---
 
-### 📊 GitHub Stats  
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=radical&langs_count=8)](https://github.com/souravsahapartho/github-readme-stats)  
+### 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=souravsahapartho&show_icons=true&theme=radical)  
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho\&layout=compact\&theme=radical\&langs_count=8)](https://github.com/souravsahapartho/github-readme-stats)
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&theme=radical&bg_color=ffffff&color=000000&line=ff6347&point=0000ff&area=true&hide_border=true)  
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=souravsahapartho\&show_icons=true\&theme=radical)
 
-- **Contributions:** ![GitHub Contributions](https://img.shields.io/badge/Contributions-365-brightgreen?style=flat&logo=github&logoColor=white)  
-- **Current Streak:** ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=souravsahapartho&theme=radical)  
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho\&theme=radical\&bg_color=ffffff\&color=000000\&line=ff6347\&point=0000ff\&area=true\&hide_border=true)
+
+* **Contributions:** ![GitHub Contributions](https://img.shields.io/badge/Contributions-365-brightgreen?style=flat\&logo=github\&logoColor=white)
+* **Current Streak:** ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=souravsahapartho\&theme=radical)
 
 ---
 
