@@ -1,7 +1,3 @@
-Here's your updated profile with JavaScript added as a skill:
-
----
-
 # [Sourav Saha](https://www.sourav.com.bd)
 
 ### Hi there 👋, I'm Sourav Saha
