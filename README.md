@@ -66,7 +66,6 @@ I'm a passionate individual who thirsts for knowledge, energy to explore, and dr
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho\&theme=radical\&bg_color=ffffff\&color=000000\&line=ff6347\&point=0000ff\&area=true\&hide_border=true)
 
 * **Contributions:** ![GitHub Contributions](https://img.shields.io/badge/Contributions-365-brightgreen?style=flat\&logo=github\&logoColor=white)
-* **Current Streak:** ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=souravsahapartho\&theme=radical)
 
 ---
 
