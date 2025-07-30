@@ -63,6 +63,7 @@
 
 ---
 
+<!--
 ### 🚧 Recent Projects
 
 | Project Name           | Description                                      | Tech Stack                | Link                          |
@@ -70,6 +71,7 @@
 | Personal Portfolio     | Responsive portfolio website with blogs          | HTML, CSS, JavaScript    | [sourav.com.bd](https://www.sourav.com.bd) |
 | Algorithm Visualizer   | Tool to visualize common algorithms in action   | C++, JavaScript          | [GitHub Repo](https://github.com/souravsahapartho/algoviz) |
 | UIU App Forum Website  | Campus app discussion platform                    | React, Node.js, MongoDB  | (private/project link)        |
+-->
 
 ---
 
@@ -96,16 +98,26 @@
 
 ### 🌐 Let's Connect
 
-<p align="center">
-  <a href="https://facebook.com/souravsahapartho" target="_blank"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white"/></a>
-  <a href="https://instagram.com/souravsahapartho" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"/></a>
-  <a href="https://linkedin.com/in/souravsahapartho" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://x.com/souravpartho" target="_blank"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=twitter&logoColor=white"/></a>
-  <a href="https://www.sourav.com.bd" target="_blank"><img src="https://img.shields.io/badge/Website-Visit-blue?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
+<p align="center" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; max-width: 400px; margin: auto;">
+  <a href="https://facebook.com/souravsahapartho" target="_blank" title="Facebook">
+    <img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white" />
+  </a>
+  <a href="https://instagram.com/souravsahapartho" target="_blank" title="Instagram">
+    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />
+  </a>
+  <a href="https://linkedin.com/in/souravsahapartho" target="_blank" title="LinkedIn">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://x.com/souravpartho" target="_blank" title="X (Twitter)">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://www.sourav.com.bd" target="_blank" title="Website">
+    <img src="https://img.shields.io/badge/Website-Visit-blue?style=for-the-badge&logo=google-chrome&logoColor=white" />
+  </a>
 </p>
 
 ---
 
-### 💬 Favorite Quote
-
-> *"Code is like humor. When you have to explain it, it’s bad."* — Cory House
+<p align="center">
+  <em>"Code is like humor. When you have to explain it, it’s bad." — Cory House</em>
+</p>
