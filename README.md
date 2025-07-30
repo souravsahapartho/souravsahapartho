@@ -8,8 +8,6 @@
   🚀 Welcome to my digital world where I build, break, and learn every day.
 </p>
 
----
-
 ### 👨‍💻 About Me
 
 - 🎓 Computer Science student at **United International University (UIU)**  
@@ -20,16 +18,12 @@
 - 📬 Feel free to reach me at: [hello@sourav.com.bd](mailto:hello@sourav.com.bd)  
 - 🌐 Visit my portfolio: [www.sourav.com.bd](https://www.sourav.com.bd)
 
----
-
 ### 🔥 Highlights
 
 - 🚀 Built a [Personal Portfolio Website](https://www.sourav.com.bd) showcasing projects and blogs  
 - 💡 Developed multiple algorithm and data structure projects in C++ and Java  
 - 🤝 Active member of the **UIU Computer Club** collaborating on tech projects and hackathons  
 - 🌍 Enthusiastic about **tech communities, mentorship, and continuous learning**
-
----
 
 ### 🛠️ Tech Stack
 
@@ -52,8 +46,6 @@
 ![Google Sites](https://img.shields.io/badge/Google%20Sites-34A853?style=flat-square&logo=google&logoColor=white)
 ![Mailchimp](https://img.shields.io/badge/Mailchimp-FFE01B?style=flat-square&logo=mailchimp&logoColor=black)
 
----
-
 <!--
 ### 🚧 Recent Projects
 
@@ -63,8 +55,6 @@
 | Algorithm Visualizer   | Tool to visualize common algorithms in action   | C++, JavaScript          | [GitHub Repo](https://github.com/souravsahapartho/algoviz) |
 | UIU App Forum Website  | Campus app discussion platform                    | React, Node.js, MongoDB  | (private/project link)        |
 -->
-
----
 
 ### 📊 GitHub Stats & Activity
 
@@ -77,37 +67,31 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&theme=react-dark&area=true&hide_border=true" width="90%" />
 </p>
 
----
-
 ### 🏆 GitHub Trophies
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=souravsahapartho&theme=gruvbox&column=6&no-frame=true&margin-w=8" />
 </p>
 
----
-
 ### 🌐 Let's Connect
 
 <p align="center" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 300px; margin: auto;">
   <a href="https://facebook.com/souravsahapartho" target="_blank" title="Facebook" rel="noopener noreferrer">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="32" height="32" />
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="32" height="32" style="color:#1877F2; fill:#1877F2;" />
   </a>
   <a href="https://instagram.com/souravsahapartho" target="_blank" title="Instagram" rel="noopener noreferrer">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="32" height="32" />
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="32" height="32" style="color:#E4405F; fill:#E4405F;" />
   </a>
   <a href="https://linkedin.com/in/souravsahapartho" target="_blank" title="LinkedIn" rel="noopener noreferrer">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="32" height="32" />
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="32" height="32" style="color:#0077B5; fill:#0077B5;" />
   </a>
   <a href="https://x.com/souravpartho" target="_blank" title="X (Twitter)" rel="noopener noreferrer">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="X" width="32" height="32" />
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="X" width="32" height="32" style="color:#1DA1F2; fill:#1DA1F2;" />
   </a>
   <a href="https://www.sourav.com.bd" target="_blank" title="Website" rel="noopener noreferrer">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg" alt="Website" width="32" height="32" />
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg" alt="Website" width="32" height="32" style="color:#4285F4; fill:#4285F4;" />
   </a>
 </p>
-
----
 
 <p align="center">
   <em>"Code is like humor. When you have to explain it, it’s bad." — Cory House</em>
