@@ -1,38 +1,38 @@
+<h1 align="center">Hi there 👋, I'm Sourav Saha</h1>
+
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=F75C7E&center=true&vCenter=true&width=435&lines=Hi+there+👋;I'm+Sourav+Saha;Aspiring+CS+Student+%7C+Tech+Explorer;Lifelong+Learner+%7C+Open+Source+Lover" alt="Typing SVG" />
+  <strong>Aspiring CS Student | Tech Explorer | Lifelong Learner | Open Source Enthusiast</strong>
 </p>
 
-<h2 align="center">🚀 Welcome to My Digital World 🌍</h2>
-
 <p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300" />
+  🚀 Welcome to my digital world where I build, break, and learn every day.
 </p>
 
 ---
 
 ### 👨‍💻 About Me
 
-🎓 I'm a Computer Science student at **United International University (UIU)**  
-💡 Exploring the world of **tech, logic, and creativity**  
-🛠️ I enjoy building, breaking, and learning  
-📫 Say hello: **[hello@sourav.com.bd](mailto:hello@sourav.com.bd)**  
-🌐 Portfolio: **[www.sourav.com.bd](https://www.sourav.com.bd)**
+- 🎓 Computer Science student at **United International University (UIU)**
+- 💡 Passionate about **tech, logic, creativity**, and solving real-world problems
+- 🛠️ I love building stuff, exploring new tools, and contributing to open-source
+- 📬 Email: [hello@sourav.com.bd](mailto:hello@sourav.com.bd)
+- 🌐 Portfolio: [www.sourav.com.bd](https://www.sourav.com.bd)
 
 ---
 
-### 🔧 Tech Stack & Tools
+### 🛠️ Tech Stack
 
-#### 💻 Programming
+#### 👨‍💻 Languages
 ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-#### 🌐 Web
+#### 🌐 Web Technologies
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-#### ⚙️ Tools
+#### ⚙️ Tools & Platforms
 ![Google Sites](https://img.shields.io/badge/Google%20Sites-34A853?style=flat-square&logo=google&logoColor=white)
 ![Mailchimp](https://img.shields.io/badge/Mailchimp-FFE01B?style=flat-square&logo=mailchimp&logoColor=black)
 
@@ -41,9 +41,8 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=souravsahapartho&show_icons=true&theme=radical" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=radical&langs_count=8" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&theme=react-dark&area=true&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=souravsahapartho&show_icons=true&theme=radical" width="45%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=radical&langs_count=8" width="45%" />
 </p>
 
 ---
@@ -51,12 +50,12 @@
 ### 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=souravsahapartho&theme=gruvbox&column=6&margin-w=10&no-frame=true" />
+  <img src="https://github-profile-trophy.vercel.app/?username=souravsahapartho&theme=gruvbox&column=6&no-frame=true&margin-w=8" />
 </p>
 
 ---
 
-### 🌍 Connect with Me
+### 🌐 Let's Connect
 
 <p align="center">
   <a href="https://facebook.com/souravsahapartho" target="_blank"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white"/></a>
@@ -68,10 +67,14 @@
 
 ---
 
-### 💬 Fun Quote
+### 💬 Favorite Quote
 
-> _"Code is like humor. When you have to explain it, it’s bad."_ — Cory House
+> *"Code is like humor. When you have to explain it, it’s bad."* — Cory House
+
+---
+
+### 💖 Follow Me
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="100" alt="Follow me" />
 </p>
