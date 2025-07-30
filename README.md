@@ -54,15 +54,6 @@
 
 ---
 
-### 📚 Currently Learning
-
-- React.js & Next.js  
-- Node.js and Express backend development  
-- AWS Cloud Services & DevOps basics  
-- Machine Learning fundamentals with Python
-
----
-
 <!--
 ### 🚧 Recent Projects
 
@@ -98,21 +89,21 @@
 
 ### 🌐 Let's Connect
 
-<p align="center" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; max-width: 400px; margin: auto;">
-  <a href="https://facebook.com/souravsahapartho" target="_blank" title="Facebook">
-    <img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white" />
+<p align="center" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 300px; margin: auto;">
+  <a href="https://facebook.com/souravsahapartho" target="_blank" title="Facebook" rel="noopener noreferrer">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="32" height="32" />
   </a>
-  <a href="https://instagram.com/souravsahapartho" target="_blank" title="Instagram">
-    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />
+  <a href="https://instagram.com/souravsahapartho" target="_blank" title="Instagram" rel="noopener noreferrer">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="32" height="32" />
   </a>
-  <a href="https://linkedin.com/in/souravsahapartho" target="_blank" title="LinkedIn">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <a href="https://linkedin.com/in/souravsahapartho" target="_blank" title="LinkedIn" rel="noopener noreferrer">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="32" height="32" />
   </a>
-  <a href="https://x.com/souravpartho" target="_blank" title="X (Twitter)">
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=twitter&logoColor=white" />
+  <a href="https://x.com/souravpartho" target="_blank" title="X (Twitter)" rel="noopener noreferrer">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="X" width="32" height="32" />
   </a>
-  <a href="https://www.sourav.com.bd" target="_blank" title="Website">
-    <img src="https://img.shields.io/badge/Website-Visit-blue?style=for-the-badge&logo=google-chrome&logoColor=white" />
+  <a href="https://www.sourav.com.bd" target="_blank" title="Website" rel="noopener noreferrer">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg" alt="Website" width="32" height="32" />
   </a>
 </p>
 
