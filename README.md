@@ -71,8 +71,6 @@
   <img src="https://github-profile-trophy.vercel.app/?username=souravsahapartho&theme=gruvbox&column=6&no-frame=true&margin-w=8" />
 </p>
 
-### 🔗 Socials
-
 <p align="center">
   <a href="https://facebook.com/souravsahapartho" target="_blank">
     <img src="https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&logo=facebook&logoColor=white" />
