@@ -1,72 +1,94 @@
-# [Sourav Saha](https://www.sourav.com.bd)
+<h1 align="center">👋 Hi, I'm <a href="https://www.sourav.com.bd" target="_blank">Sourav Saha</a></h1>
+<h3 align="center">Aspiring Computer Science Student | Lifelong Learner | Tech Explorer</h3>
 
-### Hi there 👋, I'm Sourav Saha
-
-#### Aspiring Computer Science Student | Lifelong Learner
-
-Thank you for stopping by!
-I'm a passionate individual who thirsts for knowledge, energy to explore, and drive to create. I love diving into new challenges, learning from mistakes, and growing. While I'm still a student, I believe the journey is just as important as the destination—stay tuned, my friend!
-
----
-
-### 🛠 Languages and Tools
-
-* **Programming Languages:**
-  ![C](https://img.shields.io/badge/-C-00599C?style=flat\&logo=c\&logoColor=white)
-  ![C++](https://img.shields.io/badge/-C++-00599C?style=flat\&logo=c%2B%2B\&logoColor=white)
-  ![Java](https://img.shields.io/badge/-Java-007396?style=flat\&logo=java\&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat\&logo=javascript\&logoColor=black)
-
-* **Web Development:**
-  ![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat\&logo=html5\&logoColor=white)
-  ![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat\&logo=css3\&logoColor=white)
-
-* **Tools:**
-  ![Google Sites](https://img.shields.io/badge/-Google%20Sites-34A853?style=flat\&logo=google\&logoColor=white)
-  ![Mailchimp](https://img.shields.io/badge/-Mailchimp-FFE01B?style=flat\&logo=mailchimp\&logoColor=black)
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=souravsahapartho&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views"/>
+  <img src="https://img.shields.io/badge/Focus-Learning%20%26%20Building-blueviolet" />
+  <img src="https://img.shields.io/badge/Status-Available-brightgreen" />
+</p>
 
 ---
 
-### 🌱 What I'm Up To
+### 🚀 About Me
 
-* 🌱 Currently learning: Advanced Programming, Web Development
-* 👯 Looking to collaborate on: GitHub Projects
-* 📫 How to reach me: [hello@sourav.com.bd](mailto:hello@sourav.com.bd)
+- 🎓 I'm a **B.Sc. in CSE** student at **United International University (UIU), Bangladesh**
+- 💡 Passionate about **problem-solving**, **web development**, and exploring new tech
+- 🔁 I believe in learning by doing & collaborating with like-minded techies
+- 📩 You can reach me at: [hello@sourav.com.bd](mailto:hello@sourav.com.bd)
+
+---
+
+### 🛠️ Languages & Tools
+
+#### 💻 Programming
+![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+
+#### 🌐 Web
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+
+#### ⚙️ Tools
+![Google Sites](https://img.shields.io/badge/Google%20Sites-34A853?style=flat&logo=google&logoColor=white)
+![Mailchimp](https://img.shields.io/badge/Mailchimp-FFE01B?style=flat&logo=mailchimp&logoColor=black)
+
+---
+
+### 🌱 Currently Exploring
+
+- 🌐 Advanced **web development**
+- 🧠 Mastering **algorithms & data structures**
+- 🤝 Collaboration on **open-source GitHub projects**
+
+---
+
+### 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=souravsahapartho&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <br />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=radical&langs_count=8" alt="Top Languages" />
+  <br />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&theme=radical&bg_color=ffffff&color=000000&line=ff6347&point=0000ff&area=true&hide_border=true" alt="Activity Graph"/>
+</p>
+
+---
+
+### 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=souravsahapartho&theme=dracula&column=6&margin-w=10" />
+</p>
 
 ---
 
 ### 🌐 Let's Connect!
 
-<div align="center">
+<p align="center">
   <a href="https://facebook.com/souravsahapartho" target="_blank">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8ug3P4x-ecI0FOGxCBdOTVgvjSHr9sVNxNSqfqS8H6ymuv1tLUlqfPReeMyR3wrhObem5nD7rZNpoXY1waKD7pM-FRmUAeW6P_RuGny9RJ1b2qm_o09XdSks_tTDnteoQ_LdiFDJ1Xz65JG-7Mr-fLHkrmGP_Z4gHX3RVWJ78QTrfTyA3GDx_Ex6SMz0/s512/facebook.png" alt="Facebook" width="50" height="50"/>
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
   </a>
   <a href="https://instagram.com/souravsahapartho" target="_blank">
-    <img src="https://i.postimg.cc/JhkWw07w/instagram-2.png" alt="Instagram" width="50" height="50"/>
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
   <a href="https://linkedin.com/in/souravsahapartho" target="_blank">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF1SDRBvgfZtp7smzqHVpMKLRvmnHGWTFjqzOH17OEkuqhE4_4ZHV2cgBKy2tYeRao5C3YZq4uYMbS50hZZfpoPqrLyQ9WraEDTXD7AufF5J4rm_teTQVAjDt5L-TSgjlCaj4fdLV99WER9KKVDDzG5yFk8CPwDoTLmVTgDUsNBz3kq6UnAsM3IZ4gBzM/s512/linkedin%20(2).png" alt="LinkedIn" width="50" height="50"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="https://x.com/souravpartho" target="_blank">
-    <img src="https://i.postimg.cc/76gqjSKc/twitter.png" alt="X (formerly Twitter)" width="50" height="50"/>
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=twitter&logoColor=white" />
   </a>
   <a href="https://www.sourav.com.bd" target="_blank">
-    <img src="https://i.postimg.cc/NFL2D6NG/web.png" alt="Website" width="50" height="50"/>
+    <img src="https://img.shields.io/badge/Website-Visit%20Now-blue?style=for-the-badge&logo=google-chrome&logoColor=white" />
   </a>
-</div>
+</p>
 
 ---
 
-### 📊 GitHub Stats
+### ✨ Final Note
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho\&layout=compact\&theme=radical\&langs_count=8)](https://github.com/souravsahapartho/github-readme-stats)
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=souravsahapartho\&show_icons=true\&theme=radical)
-
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho\&theme=radical\&bg_color=ffffff\&color=000000\&line=ff6347\&point=0000ff\&area=true\&hide_border=true)
-
-* **Contributions:** ![GitHub Contributions](https://img.shields.io/badge/Contributions-365-brightgreen?style=flat\&logo=github\&logoColor=white)
+> _"Keep exploring, keep building, and never stop learning!"_ 🚀
 
 ---
 
-✨ Keep exploring, keep growing, and stay curious!
