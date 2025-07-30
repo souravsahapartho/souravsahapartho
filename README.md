@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" width="100%" alt="Welcome Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=F75C7E&center=true&vCenter=true&width=435&lines=Hi+there+👋;I'm+Sourav+Saha;Aspiring+CS+Student+%7C+Tech+Explorer;Lifelong+Learner+%7C+Open+Source+Lover" alt="Typing SVG" />
 </p>
 
-<h2 align="center">🚀 Hi there 👋, I'm Sourav Saha</h2>
+<h2 align="center">🚀 Welcome to My Digital World 🌍</h2>
 
 <p align="center">
-  Aspiring CS Student | Tech Explorer | Lifelong Learner | Open Source Lover
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300" />
 </p>
 
 ---
