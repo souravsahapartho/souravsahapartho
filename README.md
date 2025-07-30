@@ -58,4 +58,39 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=souravsahapartho&show_icons=true&theme=radical" width="45%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?use
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=radical&langs_count=8" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&theme=react-dark&area=true&hide_border=true" width="90%" />
+</p>
+
+### 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=souravsahapartho&theme=gruvbox&column=6&no-frame=true&margin-w=8" />
+</p>
+
+### 🔗 Connect with Me
+
+<p align="center">
+  <a href="https://facebook.com/souravsahapartho" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=flat&logo=facebook&logoColor=white" />
+  </a>
+  <a href="https://instagram.com/souravsahapartho" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=flat&logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://linkedin.com/in/souravsahapartho" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://x.com/souravpartho" target="_blank">
+    <img src="https://img.shields.io/badge/X-%23000000.svg?style=flat&logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://www.sourav.com.bd" target="_blank">
+    <img src="https://img.shields.io/badge/Website-%23007ACC.svg?style=flat&logo=Google-Chrome&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  <em>"Code is like humor. When you have to explain it, it’s bad." — Cory House</em>
+</p>
