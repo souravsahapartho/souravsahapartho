@@ -12,29 +12,64 @@
 
 ### 👨‍💻 About Me
 
-- 🎓 Computer Science student at **United International University (UIU)**
-- 💡 Passionate about **tech, logic, creativity**, and solving real-world problems
-- 🛠️ I love building stuff, exploring new tools, and contributing to open-source
-- 📬 Email: [hello@sourav.com.bd](mailto:hello@sourav.com.bd)
-- 🌐 Portfolio: [www.sourav.com.bd](https://www.sourav.com.bd)
+- 🎓 Computer Science student at **United International University (UIU)**  
+- 💡 Passionate about **algorithms, web development, and AI/ML**  
+- 🛠️ Experienced in C, C++, Java, and JavaScript  
+- 🌱 Currently learning **React.js**, **Node.js**, and **Cloud Computing**  
+- 🌟 Open-source contributor: fixing bugs and adding features to beginner-friendly repos  
+- 📬 Feel free to reach me at: [hello@sourav.com.bd](mailto:hello@sourav.com.bd)  
+- 🌐 Visit my portfolio: [www.sourav.com.bd](https://www.sourav.com.bd)
+
+---
+
+### 🔥 Highlights
+
+- 🚀 Built a [Personal Portfolio Website](https://www.sourav.com.bd) showcasing projects and blogs  
+- 💡 Developed multiple algorithm and data structure projects in C++ and Java  
+- 🤝 Active member of the **UIU Computer Club** collaborating on tech projects and hackathons  
+- 🌍 Enthusiastic about **tech communities, mentorship, and continuous learning**
 
 ---
 
 ### 🛠️ Tech Stack
 
-#### 👨‍💻 Languages
+#### 👨‍💻 Programming Languages
 ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-#### 🌐 Web Technologies
+#### 🌐 Web Development
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node-dot-js&logoColor=white)
 
-#### ⚙️ Tools & Platforms
+#### ☁️ Cloud & Tools
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
 ![Google Sites](https://img.shields.io/badge/Google%20Sites-34A853?style=flat-square&logo=google&logoColor=white)
 ![Mailchimp](https://img.shields.io/badge/Mailchimp-FFE01B?style=flat-square&logo=mailchimp&logoColor=black)
+
+---
+
+### 📚 Currently Learning
+
+- React.js & Next.js  
+- Node.js and Express backend development  
+- AWS Cloud Services & DevOps basics  
+- Machine Learning fundamentals with Python
+
+---
+
+### 🚧 Recent Projects
+
+| Project Name           | Description                                      | Tech Stack                | Link                          |
+| --------------------- | ------------------------------------------------| -------------------------| ----------------------------- |
+| Personal Portfolio     | Responsive portfolio website with blogs          | HTML, CSS, JavaScript    | [sourav.com.bd](https://www.sourav.com.bd) |
+| Algorithm Visualizer   | Tool to visualize common algorithms in action   | C++, JavaScript          | [GitHub Repo](https://github.com/souravsahapartho/algoviz) |
+| UIU App Forum Website  | Campus app discussion platform                    | React, Node.js, MongoDB  | (private/project link)        |
 
 ---
 
@@ -70,11 +105,3 @@
 ### 💬 Favorite Quote
 
 > *"Code is like humor. When you have to explain it, it’s bad."* — Cory House
-
----
-
-### 💖 Follow Me
-
-<p align="center">
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="100" alt="Follow me" />
-</p>
