@@ -73,11 +73,15 @@
 
 ---
 
-### 📊 GitHub Stats
+### 📊 GitHub Stats & Activity
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=souravsahapartho&show_icons=true&theme=radical" width="45%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=radical&langs_count=8" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&theme=react-dark&area=true&hide_border=true" width="90%" />
 </p>
 
 ---
