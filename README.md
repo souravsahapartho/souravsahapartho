@@ -19,26 +19,6 @@
 
 ---
 
-### 🏆 Achievements
-
-- 🥇 **Finalist - UIU Hackathon 2024**  
-- 👨‍🏫 **Mentor** at UIU App Forum’s student dev bootcamps  
-- 🌐 Built multiple full-stack apps for campus and community use  
-- 🚀 Published over 10 repositories on GitHub with 1K+ views collectively  
-- 🧩 Solved 500+ problems on competitive platforms like Codeforces, LeetCode
-
----
-
-### 💼 Featured Projects
-
-| Project | Description | Tech Stack | Link |
-|--------|-------------|------------|------|
-| **Portfolio Website** | Responsive site to showcase my work | HTML, CSS, JS | [Live Site](https://www.sourav.com.bd) |
-| **AlgoViz** | Visualizer for common algorithms | C++, JS | [GitHub Repo](https://github.com/souravsahapartho/algoviz) |
-| **UIU App Forum** | Discussion & resources platform for students | React, Node.js | *(Private/Link TBD)* |
-
----
-
 ### 🧰 Tech Stack
 
 #### 👨‍💻 Programming Languages
@@ -74,11 +54,37 @@
 
 ---
 
-### 🏅 GitHub Trophies
+### 🏅 GitHub Achievements
+
+<p align="center">
+  <img src="https://github.com/souravsahapartho/github-achievement-showcase/blob/master/images/default-achievements.png?raw=true" alt="GitHub Achievements" />
+</p>
+
+<!-- Replace the above image link with this one when using shields:
+<p align="center">
+  <img src="https://github-profile-achievement-badge.vercel.app/api?username=souravsahapartho" />
+</p>
+-->
+
+---
+
+### 🏆 GitHub Trophies
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=souravsahapartho&theme=gruvbox&column=6&no-frame=true&margin-w=8" />
 </p>
+
+<!--
+
+### 🚧 Featured Projects
+
+| Project | Description | Tech Stack | Link |
+|--------|-------------|------------|------|
+| **Portfolio Website** | Responsive site to showcase my work | HTML, CSS, JS | [Live Site](https://www.sourav.com.bd) |
+| **AlgoViz** | Visualizer for common algorithms | C++, JS | [GitHub Repo](https://github.com/souravsahapartho/algoviz) |
+| **UIU App Forum** | Campus discussion platform | React, Node.js | *(Private/Link TBD)* |
+
+-->
 
 ---
 
@@ -95,5 +101,5 @@
 ---
 
 <p align="center">
-  <em>“Code is like humor. When you have to explain it, it’s bad.” — Cory House</em>
+  <em>"Code is like humor. When you have to explain it, it’s bad." — Cory House</em>
 </p>
