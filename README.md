@@ -65,12 +65,19 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 ### 📊 My GitHub Stats
 
 <p align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=GitHub%20Followers&query=%24.followers&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fsourav-saha&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=GitHub%20Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fsourav-saha&style=for-the-badge" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sourav-saha&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sourav-saha&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sourav-saha&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sourav-saha&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
+
+<p align="center">
+  <img src="https://activity-graph.herokuapp.com/graph?username=sourav-saha&theme=tokyo-night&hide_border=true" alt="GitHub Contribution Graph" />
 </p>
 
 ---
