@@ -5,121 +5,63 @@
 <div align="center">
 
   <h1>
-    I'm Sourav Saha, a <a href="https://sourav.com.bd">Developer & Creator</a>
+    I'm Sourav Saha, a <a href="https://sourav.com.bd">CS Undergrad</a>
   </h1>
   
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=00BFFF&center=true&vCenter=true&width=435&lines=Passionate+Software+Engineer;Lifelong+Learner;Problem+Solver" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=00BFFF&center=true&vCenter=true&width=435&lines=CS Undergrad;Lifelong+Learner;Problem+Solver" alt="Typing SVG" /></a>
   
 </div>
 
 ---
 
-### 👨‍💻 About Me
+## 👋 About Me
 
-<p>I am a passionate software engineer from Dhaka, Bangladesh, with a love for building innovative and efficient solutions. My journey in tech started with a simple "Hello, World!" and has since evolved into a deep fascination with backend systems, cloud infrastructure, and data-driven applications.</p>
+Hi there! I'm **Sourav Saha**, a passionate software enthusiast from Dhaka, Bangladesh 🇧🇩.
 
-* 🚀 I’m currently building **MyPortfolio**, a tool for **showcasing my projects & blogs**.
-* 🧠 I’m currently learning about **Next.js and DevOps**.
-* 🤝 I’m open to collaborating on interesting **Open Source** projects.
-* 💬 Ask me about **Frontend Development, Content Writing, HTML/CSS**.
-* 📫 How to reach me: **sourav.saha@example.com**
-* ⚡ Fun fact: I can solve a Rubik's Cube in under a minute!
+I'm currently pursuing my Bachelor's in **Computer Science** and actively expanding my skillset in web development and content creation. From solving algorithmic problems to designing user-centric web interfaces, I thrive on challenges that push me to learn and innovate.
 
----
 
-### 🛠️ My Tech Stack
+🔍 **What I’m focusing on:**
+- Building responsive and optimized websites using **HTML, CSS, Tailwind**.
+- Learning **JavaScript**, **React**, and modern web development practices.
+- Improving content creation skills with a focus on tech blogs and SEO.
 
-<table width="100%">
-  <tr>
-    <td align="center" width="180">
-      <p><strong>Frontend</strong></p>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,html,css" />
-      </a>
-    </td>
-    <td align="center" width="180">
-      <p><strong>Backend</strong></p>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=nodejs,express,py,django,go,rust" />
-      </a>
-    </td>
-    <td align="center" width="180">
-      <p><strong>Databases</strong></p>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="180">
-      <p><strong>DevOps & Cloud</strong></p>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,nginx" />
-      </a>
-    </td>
-    <td align="center" width="180">
-      <p><strong>Tools</strong></p>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=git,github,postman,vscode,figma" />
-      </a>
-    </td>
-     <td align="center" width="180">
-      <p><strong>Testing</strong></p>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=jest,testinglibrary,cypress" />
-      </a>
-    </td>
-  </tr>
-</table>
+📢 **Reach me at:** hello@sourav.com.bd
 
 ---
 
-### ✨ Featured Projects
+## 🛠 Skills & Tools
 
-<table>
-<tr>
-<td width="50%">
-  <h3 align="center">My Portfolio Website</h3>
-  <div align="center">
-    <a href="https://github.com/sourav-saha/portfolio" target="_blank"><img src="https://user-images.githubusercontent.com/00000000/portfolio-demo.gif" alt="Portfolio Screenshot" width="400" height="200"/></a>
-    <p>
-      <a href="https://github.com/sourav-saha/portfolio" target="_blank">
-        <img src="https://img.shields.io/badge/Repository-20232A?style=for-the-badge&logo=github&logoColor=white">
-      </a>
-      <a href="https://sourav.com.bd" target="_blank">
-        <img src="https://img.shields.io/badge/Live%20Demo-4E83A3?style=for-the-badge&logo=vercel&logoColor=white">
-      </a>
-    </p>
-    <p>A personal portfolio website to showcase my projects, blogs, and contact information.</p>
-    <p align="center">
-      <img src="https://img.shields.io/badge/Tech-Next.js-20232A?style=for-the-badge&logo=next.js&logoColor=white" />
-      <img src="https://img.shields.io/badge/Tech-TailwindCSS-20232A?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4" />
-      <img src="https://img.shields.io/badge/Tech-Vercel-20232A?style=for-the-badge&logo=vercel&logoColor=white" />
-    </p>
-  </div>
-</td>
-<td width="50%">
-  <h3 align="center">Blog Platform</h3>
-  <div align="center">
-    <a href="https://github.com/sourav-saha/blog-platform" target="_blank"><img src="https://user-images.githubusercontent.com/00000000/blog-demo.gif" alt="Blog Platform Screenshot" width="400" height="200"/></a>
-    <p>
-      <a href="https://github.com/sourav-saha/blog-platform" target="_blank">
-        <img src="https://img.shields.io/badge/Repository-20232A?style=for-the-badge&logo=github&logoColor=white">
-      </a>
-      <a href="https://blog.sourav.com.bd" target="_blank">
-        <img src="https://img.shields.io/badge/Live%20Demo-4E83A3?style=for-the-badge&logo=vercel&logoColor=white">
-      </a>
-    </p>
-    <p>A full-featured blogging platform built with Django and deployed on AWS.</p>
-    <p align="center">
-      <img src="https://img.shields.io/badge/Tech-Python-20232A?style=for-the-badge&logo=python&logoColor=3776AB" />
-      <img src="https://img.shields.io/badge/Tech-Django-20232A?style=for-the-badge&logo=django&logoColor=092E20" />
-      <img src="https://img.shields.io/badge/Tech-AWS-20232A?style=for-the-badge&logo=amazon-aws&logoColor=FF9900" />
-    </p>
-  </div>
-</td>
-</tr>
-</table>
+### 💻 Frontend Development
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![React (Learning)](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+
+### 🔡 Backend Development (Learning Phase)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Java (Basic)](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+
+### 🧰 Tools & Platforms
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Microsoft PowerPoint](https://img.shields.io/badge/MS%20PowerPoint-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)
+![Microsoft Word](https://img.shields.io/badge/MS%20Word-2B579A?style=for-the-badge&logo=microsoftword&logoColor=white)
+![Microsoft Excel](https://img.shields.io/badge/MS%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+
+### 📝 Soft Skills
+- Strong Organizational Skills
+- Team Collaboration & Leadership
+- Public Speaking & Event Hosting
+- Technical Content Writing (SEO-focused)
+
+---
+
+### 🌟 Featured Projects
+
+<!-- Add your project showcases here when ready -->
 
 ---
 
@@ -139,17 +81,17 @@
 ### 🌐 Connect with Me
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/sourav-saha/" target="_blank">
+  <a href="https://www.linkedin.com/in/souravsahapartho/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="https://twitter.com/souravsaha_dev" target="_blank">
+  <a href="https://twitter.com/souravpartho" target="_blank">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
-  <a href="mailto:sourav.saha@example.com">
+  <a href="mailto:hello@sourav.com.bd">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
   <a href="https://sourav.com.bd" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio">
+    <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=react&logoColor=white" alt="Website">
   </a>
 </p>
 
