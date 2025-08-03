@@ -63,6 +63,14 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 ---
 
+## 📌 Languages I Use
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sourav-saha&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
 ### 📊 My GitHub Stats
 
 <p align="center">
