@@ -8,15 +8,13 @@
     I'm Sourav Saha, a <a href="https://sourav.com.bd">CS Undergrad</a>
   </h1>
   
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=00BFFF&center=true&vCenter=true&width=435&lines=CS Undergrad;Lifelong+Learner;Problem+Solver" alt="Typing SVG" /></a>
-  
 </div>
 
 ---
 
 ## 👋 About Me
 
-Hi there! I'm **Sourav Saha**, a passionate software enthusiast from Dhaka, Bangladesh 🇧🇩.
+Hi there! I'm **Sourav Saha**, a passionate software enthusiast from Dhaka, Bangladesh.
 
 I'm currently pursuing my Bachelor's in **Computer Science** and actively expanding my skillset in web development and content creation. From solving algorithmic problems to designing user-centric web interfaces, I thrive on challenges that push me to learn and innovate.
 
