@@ -18,7 +18,6 @@ Hi there! I'm **Sourav Saha**, a passionate software enthusiast from Dhaka, Bang
 
 I'm currently pursuing my Bachelor's in **Computer Science** and actively expanding my skillset in web development and content creation. From solving algorithmic problems to designing user-centric web interfaces, I thrive on challenges that push me to learn and innovate.
 
-
 🔍 **What I’m focusing on:**
 - Building responsive and optimized websites using **HTML, CSS, Tailwind**.
 - Learning **JavaScript**, **React**, and modern web development practices.
@@ -82,14 +81,14 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
   <a href="https://www.linkedin.com/in/souravsahapartho/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="https://twitter.com/souravpartho" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
+  <a href="https://www.facebook.com/souravsahapartho" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
   </a>
   <a href="mailto:hello@sourav.com.bd">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
   <a href="https://sourav.com.bd" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=react&logoColor=white" alt="Website">
+    <img src="https://img.shields.io/badge/Website-255E63?style=for-the-badge&logo=react&logoColor=white" alt="Website">
   </a>
 </p>
 
