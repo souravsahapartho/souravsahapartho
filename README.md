@@ -3,11 +3,9 @@
 </p>
 
 <div align="center">
-
   <h1>
     I'm Sourav Saha, a <a href="https://sourav.com.bd">CS Undergrad</a>
   </h1>
-  
 </div>
 
 ---
@@ -66,16 +64,15 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 ## 📌 Languages I Use
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sourav-saha&layout=compact&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sourav-saha&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&cache_seconds=86400" />
 </p>
 
 ---
 
-### 📊 My GitHub Stats
+## 📊 My GitHub Stats
 
 <p align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=GitHub%20Followers&query=%24.followers&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fsourav-saha&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=GitHub%20Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fsourav-saha&style=for-the-badge" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sourav-saha&show_icons=true&theme=tokyonight&hide_border=true" />
 </p>
 
 <p align="center">
