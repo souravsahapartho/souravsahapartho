@@ -64,7 +64,7 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 ## 📌 Languages I Use
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sourav-saha&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&cache_seconds=86400" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&size_weight=0.5&count_weight=0.5" />
 </p>
 
 ---
@@ -72,11 +72,11 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 ## 📊 My GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sourav-saha&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=souravsahapartho&show_icons=true&theme=tokyonight&hide_border=true" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sourav-saha&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=souravsahapartho&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
