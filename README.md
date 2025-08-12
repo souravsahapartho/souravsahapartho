@@ -8,8 +8,6 @@
   </h1>
 </div>
 
----
-
 ## 👋 About Me
 
 Hi there! I'm **Sourav Saha**, a passionate software enthusiast from Dhaka, Bangladesh.
@@ -22,8 +20,6 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 - Improving content creation skills with a focus on tech blogs and SEO.
 
 📢 **Reach me at:** hello@sourav.com.bd
-
----
 
 ## 🛠 Skills & Tools
 
@@ -53,21 +49,15 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 - Public Speaking & Event Hosting
 - Technical Content Writing (SEO-focused)
 
----
-
 ### 🌟 Featured Projects
 
 <!-- Add your project showcases here when ready -->
-
----
 
 ## 📌 Languages I Use
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&size_weight=0.5&count_weight=0.5" />
 </p>
-
----
 
 ## 📊 My GitHub Stats
 
@@ -78,8 +68,6 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=souravsahapartho&theme=tokyonight&hide_border=true" />
 </p>
-
----
 
 ### 🌐 Connect with Me
 
@@ -97,8 +85,6 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
     <img src="https://img.shields.io/badge/Website-255E63?style=for-the-badge&logo=react&logoColor=white" alt="Website">
   </a>
 </p>
-
----
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer"/>
