@@ -48,7 +48,7 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 - Strong Organizational Skills
 - Team Collaboration & Leadership
 - Public Speaking & Event Hosting
-- Technical Content Writing (SEO-focused)
+- Technical Content Writing
 
 ### 🌟 Featured Projects
 
