@@ -30,7 +30,7 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![React (Learning)](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 
-### 🔡 Backend Development (Learning Phase)
+### 🔡 Backend Development
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Java (Basic)](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
