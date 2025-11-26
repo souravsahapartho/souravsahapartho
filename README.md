@@ -34,6 +34,7 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Java (Basic)](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ### 🧰 Tools & Platforms
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -51,8 +52,6 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 - Technical Content Writing
 
 ### 🌟 Featured Projects
-
-<!-- Add your project showcases here when ready -->
 
 ## 📌 Languages I Use
 
