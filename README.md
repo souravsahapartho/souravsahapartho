@@ -95,8 +95,11 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 ## 📰 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-
-<!-- BLOG-POST-LIST:END -->
+- 🔗 [IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication](https://blog.sourav.com.bd/2026/03/ip-phone.html)
+- 🔗 [The Future of AI: Will Artificial Intelligence Shape Humanity—or Replace It?](https://blog.sourav.com.bd/2025/12/future-of-ai.html)
+- 🔗 [Your Digital Life Just Got Hacked! Here’s What You Do Next](https://blog.sourav.com.bd/2025/08/data-hacked.html)
+- 🔗 [iPhone 17: Thinner Than Your Patience, Smarter Than Your Ex](https://blog.sourav.com.bd/2025/08/iphone17.html)
+- 🔗 [Google’s Veo 3 and Flow: AI is Changing How We Make Videos](https://blog.sourav.com.bd/2025/06/veo3.html)<!-- BLOG-POST-LIST:END -->
 
 ---
 
