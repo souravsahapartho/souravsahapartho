@@ -24,6 +24,12 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 ---
 
+## 🚀 Featured Projects
+
+<!-- Add your projects here later -->
+
+---
+
 ## 🛠 Skills & Tools
 
 ### 💻 Frontend Development
@@ -71,6 +77,14 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 <p align="center">
   <img loading="lazy" src="https://streak-stats.demolab.com?user=souravsahapartho&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+## 📈 Contribution Graph
+
+<p align="center">
+  <img loading="lazy" src="https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&theme=tokyo-night&hide_border=true" />
 </p>
 
 ---
