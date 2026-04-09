@@ -81,13 +81,6 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
   <img loading="lazy" src="https://codeforces-readme-stats.vercel.app/api/card?username=souravsahapartho&theme=tokyonight" />
 </p>
 
----
-
-## 📈 Codeforces Activity
-
-<p align="center">
-  <img loading="lazy" src="https://codeforces-readme-stats.vercel.app/api/heatmap?username=souravsahapartho&theme=tokyonight" />
-</p>
 
 ---
 
