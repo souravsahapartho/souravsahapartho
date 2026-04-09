@@ -78,7 +78,7 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 ## 🧠 Codeforces Stats
 
 <p align="center">
-  <img loading="lazy" src="https://codeforces-readme-stats.vercel.app/api/card?username=YOUR_CF_USERNAME&theme=tokyonight" />
+  <img loading="lazy" src="https://codeforces-readme-stats.vercel.app/api/card?username=souravsahapartho&theme=tokyonight" />
 </p>
 
 ---
@@ -86,7 +86,7 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 ## 📈 Codeforces Activity
 
 <p align="center">
-  <img loading="lazy" src="https://codeforces-readme-stats.vercel.app/api/heatmap?username=YOUR_CF_USERNAME&theme=tokyonight" />
+  <img loading="lazy" src="https://codeforces-readme-stats.vercel.app/api/heatmap?username=souravsahapartho&theme=tokyonight" />
 </p>
 
 ---
