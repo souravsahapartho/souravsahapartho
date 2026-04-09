@@ -88,14 +88,8 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 </p>
 
 <p align="center">
-  <img loading="lazy" src="https://github-readme-activity-graph.vercel.app/graph?username=souravsahapartho&theme=tokyo-night&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/output/snake.svg" alt="snake animation" />
-</p>
-
----
+  <!-- Snake running on contribution graph -->
+  <img loading="lazy" src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/output/snake.svg" alt="snake contribution graph" />
 
 ## 🌐 Connect with Me
 
