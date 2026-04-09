@@ -69,7 +69,7 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 <p align="center">
   <img loading="lazy" 
-       src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/output/github-contribution-grid-snake.svg" 
+       src="https://raw.githubusercontent.com/souravsaha/souravsaha/output/github-contribution-grid-snake.svg" 
        alt="snake contribution graph" />
 </p>
 
