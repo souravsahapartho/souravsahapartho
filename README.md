@@ -26,8 +26,7 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 ## 🚀 Featured Projects
 
-* 🌐 Portfolio: https://sourav.com.bd
-* 📰 Tech Blog: https://blog.sourav.com.bd
+<!-- Add your projects here later -->
 
 ---
 
@@ -79,24 +78,9 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 ## 🧠 Codeforces Stats
 
 <p align="center">
-  <img loading="lazy" src="https://codeforces-readme-stats.vercel.app/api/card?username=YOUR_CF_USERNAME&theme=tokyonight" />
+  <img loading="lazy" src="https://codeforces-readme-stats.vercel.app/api/card?username=souravsahapartho&theme=tokyonight" />
 </p>
 
----
-
-## 📈 Codeforces Activity
-
-<p align="center">
-  <img loading="lazy" src="https://codeforces-readme-stats.vercel.app/api/heatmap?username=YOUR_CF_USERNAME&theme=tokyonight" />
-</p>
-
----
-
-## 📰 Latest Blog Posts
-
-<!-- BLOG-POST-LIST:START -->
-
-<!-- BLOG-POST-LIST:END -->
 
 ---
 
