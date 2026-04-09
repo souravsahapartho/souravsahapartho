@@ -65,31 +65,15 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 ---
 
-## 📊 My GitHub Stats
+## 🐍 Contribution Snake
 
 <p align="center">
-  <img loading="lazy" src="https://github-readme-stats-sigma-five.vercel.app/api?username=souravsahapartho&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400" />
-</p>
-
-<p align="center">
-  <img loading="lazy" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=86400" />
-</p>
-
-<p align="center">
-  <img loading="lazy" src="https://streak-stats.demolab.com?user=souravsahapartho&theme=tokyonight&hide_border=true" />
+  <img loading="lazy" 
+       src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/output/github-contribution-grid-snake.svg" 
+       alt="snake contribution graph" />
 </p>
 
 ---
-
-## 📈 Contribution Activity (GitHub Style)
-
-<p align="center">
-  <img loading="lazy" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=souravsahapartho&theme=tokyonight" />
-</p>
-
-<p align="center">
-  <!-- Snake running on contribution graph -->
-  <img loading="lazy" src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/output/snake.svg" alt="snake contribution graph" />
 
 ## 🌐 Connect with Me
 
