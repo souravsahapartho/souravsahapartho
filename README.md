@@ -95,6 +95,14 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 ---
 
+## 👀 Profile Views
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=souravsahapartho&label=Profile%20views&color=0e75b6&style=flat" alt="souravsahapartho" />
+</p>
+
+---
+
 ## 🌐 Connect with Me
 
 <p align="center">
