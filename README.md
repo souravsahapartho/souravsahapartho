@@ -29,12 +29,33 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 * 🌐 Portfolio: https://sourav.com.bd
 * 📰 Tech Blog: https://blog.sourav.com.bd
 
+---
+
 ### 🎓 UIU Learning Management System (LMS)
 
-A modern university learning management system built for managing courses, assignments, instructors, and students efficiently.
+```bash
+📦 UIU-Learning-Management-System-LMS
+ ┣ 📂 client
+ ┣ 📂 server
+ ┣ 📂 database
+ ┣ 📂 routes
+ ┣ 📂 middleware
+ ┣ 📜 README.md
+ ┗ 📜 package.json
+```
 
-🔗 Repository:  
-https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-
+🧩 Features:
+- Course Management
+- Assignment Submission
+- Instructor Approval System
+- Student Dashboard
+- Admin Panel & Notifications
+
+<p align="center">
+  <a href="https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=souravsahapartho&repo=UIU-Learning-Management-System-LMS-&theme=tokyonight" />
+  </a>
+</p>
 
 ---
 
