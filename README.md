@@ -78,11 +78,14 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 ---
 
+---
+
 ## 📊 Most Used Languages
 
 <p align="center">
-  <img loading="lazy" 
-       src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=tokyonight&hide_border=true" />
+  <img loading="lazy"
+       height="180em"
+       src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&langs_count=8&theme=tokyonight" />
 </p>
 
 ---
