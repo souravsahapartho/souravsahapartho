@@ -103,8 +103,6 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 - 🔗 [iPhone 17: Thinner Than Your Patience, Smarter Than Your Ex](https://blog.sourav.com.bd/2025/08/iphone17.html)
 - 🔗 [Google’s Veo 3 and Flow: AI is Changing How We Make Videos](https://blog.sourav.com.bd/2025/06/veo3.html)<!-- BLOG-POST-LIST:END -->
 
----
-
 ## 🌐 Connect with Me
 
 <p align="center">
