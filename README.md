@@ -76,10 +76,6 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 ---
 
----
-
----
-
 ## 📊 Most Used Languages
 
 <p align="center">
