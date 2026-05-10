@@ -84,7 +84,7 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 <p align="center">
   <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=souravsahapartho&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=souravsahapartho&theme=github_dark"
     alt="Most Used Languages" />
 </p>
 
