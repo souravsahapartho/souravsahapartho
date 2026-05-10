@@ -29,33 +29,40 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 * 🌐 Portfolio: https://sourav.com.bd
 * 📰 Tech Blog: https://blog.sourav.com.bd
 
+### 🎓 UIU Learning Management System (LMS)
+
+A modern university learning management system built for managing courses, assignments, instructors, and students efficiently.
+
+🔗 Repository:  
+https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-
+
 ---
 
 ## 🛠 Skills & Tools
 
 ### 💻 Frontend Development
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge\&logo=tailwindcss\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
-![React (Learning)](https://img.shields.io/badge/React-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React (Learning)](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 
 ### 🔡 Backend Development
 
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge\&logo=c\&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge\&logo=cplusplus\&logoColor=white)
-![Java (Basic)](https://img.shields.io/badge/Java-007396?style=for-the-badge\&logo=java\&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Java (Basic)](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 ### 🧰 Tools & Platforms
 
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
-![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge\&logo=visualstudiocode\&logoColor=white)
-![Microsoft PowerPoint](https://img.shields.io/badge/MS%20PowerPoint-B7472A?style=for-the-badge\&logo=microsoftpowerpoint\&logoColor=white)
-![Microsoft Word](https://img.shields.io/badge/MS%20Word-2B579A?style=for-the-badge\&logo=microsoftword\&logoColor=white)
-![Microsoft Excel](https://img.shields.io/badge/MS%20Excel-217346?style=for-the-badge\&logo=microsoftexcel\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Microsoft PowerPoint](https://img.shields.io/badge/MS%20PowerPoint-B7472A?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)
+![Microsoft Word](https://img.shields.io/badge/MS%20Word-2B579A?style=for-the-badge&logo=microsoftword&logoColor=white)
+![Microsoft Excel](https://img.shields.io/badge/MS%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 
 ### 📝 Soft Skills
 
@@ -101,7 +108,8 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 - 🔗 [The Future of AI: Will Artificial Intelligence Shape Humanity—or Replace It?](https://blog.sourav.com.bd/2025/12/future-of-ai.html)
 - 🔗 [Your Digital Life Just Got Hacked! Here’s What You Do Next](https://blog.sourav.com.bd/2025/08/data-hacked.html)
 - 🔗 [iPhone 17: Thinner Than Your Patience, Smarter Than Your Ex](https://blog.sourav.com.bd/2025/08/iphone17.html)
-- 🔗 [Google’s Veo 3 and Flow: AI is Changing How We Make Videos](https://blog.sourav.com.bd/2025/06/veo3.html)<!-- BLOG-POST-LIST:END -->
+- 🔗 [Google’s Veo 3 and Flow: AI is Changing How We Make Videos](https://blog.sourav.com.bd/2025/06/veo3.html)
+<!-- BLOG-POST-LIST:END -->
 
 ---
 
