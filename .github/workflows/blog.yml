@@ -2,18 +2,26 @@ name: Latest Blog Posts
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  update-readme:
+  update-readme-with-blog:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: gautamkrishnar/blog-post-workflow@v1
+      - name: Pull latest blog posts
+        uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_list: "https://blog.sourav.com.bd/feeds/posts/default"
+          feed_list: "https://blog.sourav.com.bd/rss.xml"
           max_post_count: 5
-          template: "$newline- 🔗 [$title]($url)"
+          comment_tag_name: "BLOG-POST-LIST"
+          commit_message: "Updated latest blog posts"
+          readme_path: "./README.md"
+          template: "- 🔗 [$title]($url)"
