@@ -103,7 +103,13 @@ https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-
 
 ## 📰 Latest Blog Posts
 
-<!-- BLOG-POST-LIST:START -->- 🔗 [Why Developers and Power Users Are Switching to Claude in 2026](https://blog.sourav.com.bd/post/claude-ai-2026)- 🔗 [IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication](https://blog.sourav.com.bd/post/ip-phone)- 🔗 [The Future of AI: Will Artificial Intelligence Shape Humanity—or Replace It?](https://blog.sourav.com.bd/post/the-future-of-ai)- 🔗 [Your Digital Life Just Got Hacked! Here’s What You Do Next](https://blog.sourav.com.bd/post/your-digital-life-just-got-hacked)- 🔗 [iPhone 17: Thinner Than Your Patience, Smarter Than Your Ex](https://blog.sourav.com.bd/post/iphone-17-thinner-than-your-ex)<!-- BLOG-POST-LIST:END -->
+<!-- BLOG-POST-LIST:START -->
+- [google news](https://blog.sourav.com.bd/post/google-news)
+- [Why Developers and Power Users Are Switching to Claude in 2026](https://blog.sourav.com.bd/post/claude-ai-2026)
+- [IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication](https://blog.sourav.com.bd/post/ip-phone)
+- [The Future of AI: Will Artificial Intelligence Shape Humanity—or Replace It?](https://blog.sourav.com.bd/post/the-future-of-ai)
+- [Your Digital Life Just Got Hacked! Here’s What You Do Next](https://blog.sourav.com.bd/post/your-digital-life-just-got-hacked)
+<!-- BLOG-POST-LIST:END -->
 
 ---
 
