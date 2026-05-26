@@ -103,7 +103,13 @@ https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-
 
 ## 📰 Latest Blog Posts
 
-<!-- BLOG-POST-LIST:START -->- 🔗 [Instagram Instants Is Here — But Users Are Still Trying to Figure Out Why](https://blog.sourav.com.bd/post/instagram-instants)- 🔗 [Why Developers and Power Users Are Switching to Claude in 2026](https://blog.sourav.com.bd/post/claude-ai-2026)- 🔗 [IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication](https://blog.sourav.com.bd/post/ip-phone)- 🔗 [The Future of AI: Will Artificial Intelligence Shape Humanity—or Replace It?](https://blog.sourav.com.bd/post/the-future-of-ai)- 🔗 [Your Digital Life Just Got Hacked! Here’s What You Do Next](https://blog.sourav.com.bd/post/your-digital-life-just-got-hacked)<!-- BLOG-POST-LIST:END -->
+<!-- BLOG-POST-LIST:START -->
+- [Instagram Instants Is Here — But Users Are Still Trying to Figure Out Why](https://blog.sourav.com.bd/post/instagram-instants)
+- [Why Developers and Power Users Are Switching to Claude in 2026](https://blog.sourav.com.bd/post/claude-ai-2026)
+- [IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication](https://blog.sourav.com.bd/post/ip-phone)
+- [How Bitcoin Actually Works: Blockchain, Mining &amp; Transactions Explained](https://blog.sourav.com.bd/post/how-bitcoin-works)
+- [Bitcoin: The Digital Revolution](https://blog.sourav.com.bd/post/bitcoin)
+<!-- BLOG-POST-LIST:END -->
 
 ---
 
