@@ -103,13 +103,7 @@ https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-
 
 ## 📰 Latest Blog Posts
 
-<!-- BLOG-POST-LIST:START -->
-- [Instagram Instants Is Here — But Users Are Still Trying to Figure Out Why](https://blog.sourav.com.bd/article/instagram-instants)
-- [Why Developers and Power Users Are Switching to Claude in 2026](https://blog.sourav.com.bd/article/claude-ai-2026)
-- [IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication](https://blog.sourav.com.bd/article/ip-phone)
-- [How to Buy Bitcoin: A Beginner&#39;s Guide](https://blog.sourav.com.bd/article/how-to-buy-bitcoin)
-- [Bitcoin: Safe Investment or Dangerous Risk?](https://blog.sourav.com.bd/article/bitcoin-safe-or-risk)
-<!-- BLOG-POST-LIST:END -->
+<!-- BLOG-POST-LIST:START -->- 🔗 [Gemini Omni and Google Flow: The Future of AI-Powered Content Creation](https://blog.sourav.com.bd/article/gemini-omni-google-flow)- 🔗 [Instagram Instants Is Here — But Users Are Still Trying to Figure Out Why](https://blog.sourav.com.bd/article/instagram-instants)- 🔗 [Why Developers and Power Users Are Switching to Claude in 2026](https://blog.sourav.com.bd/article/claude-ai-2026)- 🔗 [IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication](https://blog.sourav.com.bd/article/ip-phone)- 🔗 [How to Buy Bitcoin: A Beginner&#39;s Guide](https://blog.sourav.com.bd/article/how-to-buy-bitcoin)<!-- BLOG-POST-LIST:END -->
 
 ---
 
