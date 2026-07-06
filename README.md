@@ -54,6 +54,7 @@ https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Java (Basic)](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 ### 🧰 Tools & Platforms
 
