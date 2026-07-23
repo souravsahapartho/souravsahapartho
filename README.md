@@ -91,7 +91,7 @@ A modern university learning management system built for managing courses, assig
 
 <p align="center">
   <img loading="lazy"
-    src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/output/github_dark/languages.svg"
+    src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/main/profile-summary-card-output/github_dark/1-repos-per-language.svg"
     alt="Most Used Languages" />
 </p>
 
