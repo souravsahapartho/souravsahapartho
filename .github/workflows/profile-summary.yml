@@ -2,8 +2,8 @@ name: Generate Language Stats Card
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # প্রতি ৬ ঘণ্টা পর পর auto-update
-  workflow_dispatch:         # চাইলে manually "Run workflow" থেকেও চালানো যাবে
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
