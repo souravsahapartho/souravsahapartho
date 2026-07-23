@@ -8,13 +8,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    name: generate-github-profile-summary-cards
     steps:
-      - name: Generate cards
-        uses: vn7n24fzkq5/github-profile-summary-cards@release
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          user: souravsahapartho
-          theme: github_dark
-          card_width: 500
+          USERNAME: souravsahapartho
+          UTC_OFFSET: 6
