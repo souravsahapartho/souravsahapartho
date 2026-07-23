@@ -104,8 +104,8 @@ A modern university learning management system built for managing courses, assig
     <img loading="lazy" alt="GitHub Streak Stats" src="https://streak-stats.demolab.com/?user=souravsahapartho&theme=tokyonight&hide_border=true">
   </picture>
   <picture>
-    <source media="" srcset="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/main/profile-summary-card-output/github_dark/3-stats.svg">
-    <img loading="lazy" alt="GitHub Stats" src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/main/profile-summary-card-output/github_dark/3-stats.svg">
+    <source media="" srcset="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/main/profile-summary-card-output/github_dark/3-stats.svg?v=2">
+    <img loading="lazy" alt="GitHub Stats" src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/main/profile-summary-card-output/github_dark/3-stats.svg?v=2">
   </picture>
 </p>
 
