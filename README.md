@@ -33,8 +33,11 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 
 A modern university learning management system built for managing courses, assignments, instructors, and students efficiently.
 
-🔗 Repository:  
-https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-
+<p align="left">
+  <a href="https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-" target="_blank">
+    <img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View LMS Repository" />
+  </a>
+</p>
 
 ---
 
@@ -87,8 +90,8 @@ https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-
 ## 📊 Most Used Languages
 
 <p align="center">
-  <img 
-    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=souravsahapartho&theme=github_dark"
+  <img loading="lazy"
+    src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/output/github_dark/languages.svg"
     alt="Most Used Languages" />
 </p>
 
