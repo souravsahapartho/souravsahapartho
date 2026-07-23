@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.SUMMARY_CARDS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_CARDS_TOKEN || github.token }}
         with:
           USERNAME: souravsahapartho
           UTC_OFFSET: 6
