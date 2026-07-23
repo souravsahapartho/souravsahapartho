@@ -1,5 +1,8 @@
 <p align="center">
-  <img loading="lazy" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Hi%20there!&fontSize=70&animation=fadeIn&fontAlignY=35"/>
+  <picture>
+    <source media="" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Hi%20there!&fontSize=70&animation=fadeIn&fontAlignY=35">
+    <img loading="lazy" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Hi%20there!&fontSize=70&animation=fadeIn&fontAlignY=35">
+  </picture>
 </p>
 
 <div align="center">
@@ -80,9 +83,10 @@ A modern university learning management system built for managing courses, assig
 ## 🐍 Contribution Snake
 
 <p align="center">
-  <img loading="lazy" 
-       src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/output/github-contribution-grid-snake.svg" 
-       alt="snake contribution graph" />
+  <picture>
+    <source media="" srcset="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/output/github-contribution-grid-snake.svg">
+    <img loading="lazy" alt="snake contribution graph" src="https://raw.githubusercontent.com/souravsahapartho/souravsahapartho/output/github-contribution-grid-snake.svg">
+  </picture>
 </p>
 
 ---
@@ -101,7 +105,10 @@ A modern university learning management system built for managing courses, assig
 ## 🧠 Codeforces Stats
 
 <p align="center">
-  <img loading="lazy" src="https://codeforces-readme-stats.vercel.app/api/card?username=souravsahapartho&theme=tokyonight" />
+  <picture>
+    <source media="" srcset="https://codeforces-readme-stats.vercel.app/api/card?username=souravsahapartho&theme=tokyonight">
+    <img loading="lazy" alt="Codeforces Stats" src="https://codeforces-readme-stats.vercel.app/api/card?username=souravsahapartho&theme=tokyonight">
+  </picture>
 </p>
 
 ---
@@ -136,5 +143,8 @@ A modern university learning management system built for managing courses, assig
 </p>
 
 <p align="center">
-  <img loading="lazy" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer"/>
+  <picture>
+    <source media="" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer">
+    <img loading="lazy" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer">
+  </picture>
 </p>
