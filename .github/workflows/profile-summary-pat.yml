@@ -1,0 +1,19 @@
+name: Generate Language Stats Card
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    steps:
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_CARDS_TOKEN }}
+        with:
+          USERNAME: souravsahapartho
+          UTC_OFFSET: 6
