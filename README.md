@@ -32,13 +32,16 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 * 🌐 Portfolio: https://sourav.com.bd
 * 📰 Tech Blog: https://blog.sourav.com.bd
 
-### 🎓 UIU Learning Management System (LMS)
+### 🕉️ UIUSVS — UIU Sanatani Vidyarthi Samsad
 
-A modern university learning management system built for managing courses, assignments, instructors, and students efficiently.
+The official digital platform of **UIU Sanatani Vidyarthi Samsad**, built as a modern full-stack community ecosystem featuring member management, donation campaigns, annual tour registration, digital ID cards, blogs, media galleries, spiritual audio streaming, and a secure role-based admin dashboard.
 
 <p align="left">
-  <a href="https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-" target="_blank">
-    <img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View LMS Repository" />
+  <a href="https://github.com/souravsahapartho/UIUSVS" target="_blank">
+    <img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View UIUSVS Repository" />
+  </a>
+  <a href="https://souravsahapartho.github.io/UIUSVS/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Website-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live UIUSVS Website" />
   </a>
 </p>
 
