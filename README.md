@@ -37,7 +37,7 @@ I'm currently pursuing my Bachelor's in **Computer Science** and actively expand
 The official digital platform of **UIU Sanatani Vidyarthi Samsad**, built as a modern full-stack community ecosystem featuring member management, donation campaigns, annual tour registration, digital ID cards, blogs, media galleries, spiritual audio streaming, and a secure role-based admin dashboard.
 
 <p align="left">
-  <a href="https://github.com/souravsahapartho/UIUSVS" target="_blank">
+  <a href="https://sourav.com.bd/repo/uiusvs" target="_blank">
     <img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View UIUSVS Repository" />
   </a>
   <a href="https://sourav.com.bd/repo/uiusvs" target="_blank">
