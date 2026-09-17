@@ -40,8 +40,7 @@ The official digital platform of **UIU Sanatani Vidyarthi Samsad**, built as a m
   <a href="https://github.com/souravsahapartho/UIUSVS" target="_blank">
     <img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View UIUSVS Repository" />
   </a>
-  <a href="https://souravsahapartho.github.io/UIUSVS/" target="_blank">
-    <img src="https://img.shields.io/badge/Live%20Website-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live UIUSVS Website" />
+  <a href="https://sourav.com.bd/repo/uiusvs" target="_blank">
   </a>
 </p>
 
