@@ -24,5 +24,5 @@ jobs:
           comment_tag_name: "BLOG-POST-LIST"
           readme_path: "./README.md"
           commit_message: "Updated latest blog posts"
-          template: "- 🔗 [$title]($url)"
+          template: "- 🔗 [$title]($url)$newline"
           disable_html_encoding: true
