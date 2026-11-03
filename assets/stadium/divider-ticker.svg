@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" role="img" aria-labelledby="t d">
+<title id="t">LED ticker divider</title><desc id="d">An LED board scrolling: TechTalk with Sourav, blog.sourav.com.bd, building for UIU.</desc>
+<defs><clipPath id="card"><rect width="1200" height="140" rx="28"/></clipPath></defs>
+<style>text{font-family:'Segoe UI','Helvetica Neue',Roboto,Arial,sans-serif}.fb{transform-box:fill-box;transform-origin:center}.tick{animation:ticker 32s linear infinite}@keyframes ticker{to{transform:translateX(-50%)}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<g clip-path="url(#card)"><rect width="1200" height="140" fill="#05070D"/><rect x="30" y="32" width="1140" height="76" rx="10" fill="#0A0F1E" stroke="#1E2A47" stroke-width="4"/><clipPath id="tb"><rect x="38" y="40" width="1124" height="60"/></clipPath><g clip-path="url(#tb)"><g class="tick fb"><text x="50" y="86" font-size="46" font-weight="700" fill="#FFB020" textLength="1160" lengthAdjust="spacingAndGlyphs">TECHTALK WITH SOURAV · BLOG.SOURAV.COM.BD · BUILDING FOR UIU · </text><text x="1210" y="86" font-size="46" font-weight="700" fill="#FFB020" textLength="1160" lengthAdjust="spacingAndGlyphs">TECHTALK WITH SOURAV · BLOG.SOURAV.COM.BD · BUILDING FOR UIU · </text></g></g></g>
+</svg>
