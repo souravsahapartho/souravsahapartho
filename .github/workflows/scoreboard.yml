@@ -1,4 +1,4 @@
-name: Stadium Scoreboard
+name: REDLINE Stats
 
 on:
   schedule:
@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Generate scoreboard
+      - name: Generate stats cards
         run: node scripts/scoreboard.mjs
         env:
           GH_TOKEN: ${{ secrets.SUMMARY_CARDS_TOKEN || secrets.GITHUB_TOKEN }}
@@ -36,8 +36,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stadium/generated/scoreboard.svg
+          git add assets/redline/generated
           git diff --cached --quiet && exit 0
-          git commit -m "chore(stadium): update scoreboard"
+          git commit -m "chore(redline): update stats"
           git pull --rebase origin main
           git push

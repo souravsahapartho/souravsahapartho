@@ -1,15 +1,16 @@
-// Generates assets/stadium/generated/scoreboard.svg from the GitHub GraphQL API.
-// Zero dependencies (Node 20+). Env: GH_TOKEN (required), GH_LOGIN, OUT.
+// Generates the REDLINE stats cards (desktop + mobile) from the GitHub API.
+// Zero dependencies (Node 20+). Env: GH_TOKEN (required), GH_LOGIN, OUT_DIR.
 import fs from 'node:fs';
 import path from 'node:path';
 
 const TOKEN = process.env.GH_TOKEN;
 const LOGIN = process.env.GH_LOGIN || 'souravsahapartho';
-const OUT = process.env.OUT || 'assets/stadium/generated/scoreboard.svg';
+const OUT_DIR = process.env.OUT_DIR || 'assets/redline/generated';
 if (!TOKEN) { console.error('GH_TOKEN is required'); process.exit(1); }
 
-const C = { night: '#05070D', mid: '#0B1530', edge: '#1E2A47', panel: '#0A0F1E', chalk: '#E9F2EC', el: '#2EE6FF', led: '#FFB020', ledoff: '#2A1D05', muted: '#8A97B5' };
-const FONT = "'Segoe UI','Helvetica Neue',Roboto,Arial,sans-serif";
+const C = { bg: '#080808', surf: '#111111', surf2: '#171717', line: '#2A0A0E', red: '#FF1744', glow: '#FF3030', text: '#F5F5F5', t2: '#A1A1AA' };
+const FONT = "'Segoe UI',Inter,Roboto,'Helvetica Neue',Arial,sans-serif";
+const MONO = "'JetBrains Mono','Cascadia Code','SF Mono',Consolas,Menlo,monospace";
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 const n1 = v => Math.round(v * 10) / 10;
 
@@ -32,7 +33,7 @@ async function restFollowing() {
   return (await res.json()).following;
 }
 
-const REPO_FIELDS = 'pageInfo { hasNextPage endCursor } nodes { stargazerCount primaryLanguage { name color } }';
+const REPO_FIELDS = 'pageInfo { hasNextPage endCursor } nodes { stargazerCount }';
 const MAIN = `query($login: String!) { user(login: $login) {
   followers { totalCount }
   repositories(ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false, first: 100) { totalCount ${REPO_FIELDS} }
@@ -59,13 +60,6 @@ async function load() {
   if (i >= 0 && days[i].contributionCount === 0) i--; // today may not be finished yet
   let current = 0;
   for (; i >= 0 && days[i].contributionCount > 0; i--) current++;
-  const langs = new Map();
-  for (const r of repos) {
-    if (!r.primaryLanguage) continue;
-    const l = langs.get(r.primaryLanguage.name) || { name: r.primaryLanguage.name, color: r.primaryLanguage.color || C.muted, n: 0 };
-    l.n++;
-    langs.set(r.primaryLanguage.name, l);
-  }
   return {
     repos: user.repositories.totalCount,
     stars: repos.reduce((s, r) => s + r.stargazerCount, 0),
@@ -73,93 +67,87 @@ async function load() {
     following: await restFollowing(),
     contributions: user.contributionsCollection.contributionCalendar.totalContributions,
     current, best,
-    langs: [...langs.values()].sort((a, b) => b.n - a.n || a.name.localeCompare(b.name)),
   };
 }
 
-// ---- 7-segment rendering
-const SEG = { 0: 'abcdef', 1: 'bc', 2: 'abged', 3: 'abgcd', 4: 'fgbc', 5: 'afgcd', 6: 'afgedc', 7: 'abc', 8: 'abcdefg', 9: 'abcdfg' };
-const H = (x, y, len, t) => `M${n1(x)} ${n1(y)}l${n1(t / 2)} ${n1(-t / 2)}h${n1(len - t)}l${n1(t / 2)} ${n1(t / 2)}l${n1(-t / 2)} ${n1(t / 2)}h${n1(-(len - t))}z`;
-const V = (x, y, len, t) => `M${n1(x)} ${n1(y)}l${n1(t / 2)} ${n1(t / 2)}v${n1(len - t)}l${n1(-t / 2)} ${n1(t / 2)}l${n1(-t / 2)} ${n1(-t / 2)}v${n1(-(len - t))}z`;
-function digit(d, x, y, w, h) {
-  const t = h * 0.14, q = h / 2 - t * 1.1;
-  const p = {
-    a: H(x + t * 0.1, y + t / 2, w - t * 0.2, t), g: H(x + t * 0.1, y + h / 2, w - t * 0.2, t), d: H(x + t * 0.1, y + h - t / 2, w - t * 0.2, t),
-    f: V(x + t / 2, y + t * 0.6, q, t), b: V(x + w - t / 2, y + t * 0.6, q, t), e: V(x + t / 2, y + h / 2 + t * 0.5, q, t), c: V(x + w - t / 2, y + h / 2 + t * 0.5, q, t),
-  };
-  const on = SEG[d];
-  const lit = [...on].map(k => p[k]).join('');
-  const off = Object.keys(p).filter(k => !on.includes(k)).map(k => p[k]).join('');
-  return { lit, off };
-}
+// ---- rendering
+const ICONS = {
+  repos: 'M4 19.5V5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2zm0 0a2 2 0 0 0 2 2h13',
+  contributions: 'M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 12h6m6 0h6',
+  followers: 'M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 5a3 3 0 0 1 0 6M18 14c1.7.6 3 2.4 3 4.5',
+  stars: 'M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z',
+};
 let step = 0;
-function number(value, x, y, maxW, h = 84) {
-  const s = String(value);
-  let w = h * 0.55, gap = 8;
-  const total = () => s.length * w + (s.length - 1) * gap;
-  while (total() > maxW && w > 20) { w -= 2; gap = Math.max(4, gap - 0.5); h -= 3; }
-  let out = '';
-  [...s].forEach((ch, i) => {
-    const { lit, off } = digit(ch, x + i * (w + gap), y, w, h);
-    out += `<g><path d="${off}" fill="${C.ledoff}"/><path class="dg" style="animation-delay:${(step++ * 0.05).toFixed(2)}s" d="${lit}" fill="${C.led}"/></g>`;
+// odometer: each digit is a vertical strip clipped to one cell; base transform = final digit, animation starts from 0
+function odometer(value, x, baseline, size, uid) {
+  const str = Number(value).toLocaleString('en-US');
+  const cw = size * 0.58, ch = size * 1.08;
+  let cx = x, out = '', clips = '';
+  [...str].forEach((c, i) => {
+    if (c === ',') { out += `<text x="${n1(cx - cw * 0.12)}" y="${baseline}" font-size="${size}" font-weight="700" fill="${C.text}">,</text>`; cx += cw * 0.2; return; }
+    const id = `${uid}c${i}`;
+    clips += `<clipPath id="${id}"><rect x="${n1(cx)}" y="${n1(baseline - size * 0.85)}" width="${n1(cw)}" height="${n1(ch)}"/></clipPath>`;
+    const d = Number(c);
+    const strip = Array.from({ length: 10 }, (_, k) => `<text x="${n1(cx + cw / 2)}" y="${n1(baseline + k * ch)}" text-anchor="middle" font-size="${size}" font-weight="700" fill="${C.text}">${k}</text>`).join('');
+    out += `<g clip-path="url(#${id})"><g class="od" style="transform:translateY(${n1(-d * ch)}px);animation-delay:${(0.2 + (step++) * 0.08).toFixed(2)}s">${strip}</g></g>`;
+    cx += cw;
   });
-  return { svg: out, width: total() };
+  return { svg: out, clips };
 }
-const text = (s, x, y, size, fill, w = 700) => `<text x="${n1(x)}" y="${n1(y)}" font-size="${size}" font-weight="${w}" fill="${fill}">${esc(s)}</text>`;
-
-function build(d, date) {
-  const W = 1000, Hh = 780;
-  let body = `<rect width="${W}" height="${Hh}" fill="${C.night}"/><rect x="10" y="10" width="${W - 20}" height="${Hh - 20}" rx="22" fill="${C.mid}" stroke="${C.edge}" stroke-width="4"/>`;
-  body += text('MATCHDAY SCOREBOARD', 40, 70, 38, C.led, 800) + text(`UPDATED ${date}`, 960, 66, 30, C.muted, 600).replace('<text ', '<text text-anchor="end" ');
-  body += `<path d="M40 92H960" stroke="${C.el}" stroke-opacity=".35" stroke-width="2"/>`;
-  const panel = (x, y, w, label, value, suffix) => {
-    let s = `<rect x="${x}" y="${y}" width="${w}" height="160" rx="14" fill="${C.panel}" stroke="${C.edge}" stroke-width="3"/>` + text(label, x + 20, y + 46, 32, C.muted, 700);
-    const num = number(value, x + 20, y + 66, w - 40 - (suffix ? 44 : 0));
-    s += num.svg;
-    if (suffix) s += text(suffix, x + 20 + num.width + 10, y + 66 + 76, 40, C.led, 800);
-    return s;
-  };
-  const a = [['REPOS', d.repos], ['STARS', d.stars], ['FOLLOWERS', d.followers], ['FOLLOWING', d.following]];
-  const wa = (W - 80 - 3 * 14) / 4;
-  a.forEach(([l, v], i) => { body += panel(40 + i * (wa + 14), 112, wa, l, v); });
-  const b = [['CONTRIBUTIONS', d.contributions, '', 340], ['STREAK', d.current, 'D', 276], ['BEST RUN', d.best, 'D', 276]];
-  let bxp = 40;
-  b.forEach(([l, v, s, w]) => { body += panel(bxp, 292, w, l, v, s); bxp += w + 14; });
-  // formation bar
-  body += text('FORMATION · REPOS BY LANGUAGE', 40, 504, 32, C.muted, 700);
-  const top = d.langs.slice(0, 6), rest = d.langs.slice(6).reduce((s, l) => s + l.n, 0);
-  const items = top.map(l => ({ name: l.name, color: l.color, n: l.n })).concat(rest ? [{ name: 'Other', color: C.muted, n: rest }] : []);
-  const total = items.reduce((s, l) => s + l.n, 0) || 1;
-  let bx = 40;
-  body += `<clipPath id="bar"><rect x="40" y="520" width="920" height="40" rx="10"/></clipPath><g clip-path="url(#bar)">`;
-  items.forEach(it => { const w = 920 * it.n / total; body += `<rect x="${n1(bx)}" y="520" width="${n1(w)}" height="40" fill="${esc(it.color)}"/>`; bx += w; });
-  body += '</g>';
-  items.forEach((it, i) => {
-    const x = 40 + (i % 2) * 470, y = 612 + Math.floor(i / 2) * 46;
-    body += `<rect x="${x}" y="${y - 24}" width="24" height="24" rx="5" fill="${esc(it.color)}"/>` + text(`${it.name} ${it.n}`, x + 36, y, 34, C.chalk, 600);
-  });
-  body += `<rect class="scan" x="10" y="-6" width="${W - 20}" height="2" fill="#fff" fill-opacity=".08"/>`;
-  const desc = `${d.repos} public repositories, ${d.stars} stars, ${d.followers} followers, ${d.following} following, ${d.contributions} contributions in the last 12 months, current streak ${d.current} days, best streak ${d.best} days. Repositories by language: ${items.map(i => `${i.name} ${i.n}`).join(', ')}.`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${Hh}" role="img" aria-labelledby="t d">
-<title id="t">Matchday scoreboard: live GitHub statistics</title><desc id="d">${esc(desc)}</desc>
-<style>text{font-family:${FONT}}.dg{animation:segIn .3s ease-out both}.scan{animation:scan 6s linear infinite}@keyframes segIn{from{opacity:0}to{opacity:1}}@keyframes scan{to{transform:translateY(790px)}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
-${body}
+function tile(x, y, w, h, key, label, value, numSize, uid) {
+  const od = odometer(value, x + 30, y + h - 36, numSize, uid);
+  return { defs: od.clips, svg: `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="${C.surf2}" stroke="${C.line}" stroke-width="2"/><path d="M${x + 20} ${y + 1.5}H${x + w - 20}" stroke="${C.red}" stroke-width="3" stroke-linecap="round"/>
+<circle class="pulse" cx="${x + w * 0.62}" cy="${y + h - 56}" r="${n1(numSize * 0.9)}" fill="url(#gl)"/>
+<g transform="translate(${x + 28} ${y + 26}) scale(1.4)"><path d="${ICONS[key]}" fill="none" stroke="${C.red}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="${x + 78}" y="${y + 52}" font-size="24" font-weight="600" fill="${C.t2}" font-family="${MONO}" letter-spacing="1">${esc(label)}</text>${od.svg}` };
+}
+const CSS = `.od{animation:od 1.1s cubic-bezier(.2,.8,.2,1) both}@keyframes od{from{transform:translateY(0)}}.pulse{animation:pu 5s ease-in-out infinite alternate}@keyframes pu{from{opacity:.55}to{opacity:1}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}`;
+function wrap(W, H, d, body, defs) {
+  const desc = `${d.repos} public repositories, ${d.contributions} contributions in the last 12 months, ${d.followers} followers, ${d.stars} stars earned. Following ${d.following}. Current streak ${d.current} days, best streak ${d.best} days.`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t d">
+<title id="t">GitHub statistics</title><desc id="d">${esc(desc)}</desc>
+<defs><clipPath id="card"><rect width="${W}" height="${H}" rx="24"/></clipPath><radialGradient id="gl"><stop offset="0" stop-color="${C.glow}" stop-opacity=".1"/><stop offset="1" stop-color="${C.glow}" stop-opacity="0"/></radialGradient>${defs}</defs>
+<style>text{font-family:${FONT}}${CSS}</style>
+<g clip-path="url(#card)"><rect width="${W}" height="${H}" fill="${C.bg}"/>${body}</g>
 </svg>
 `;
+}
+const tiles = d => [['repos', 'REPOSITORIES', d.repos], ['contributions', 'CONTRIBUTIONS', d.contributions], ['followers', 'FOLLOWERS', d.followers], ['stars', 'STARS EARNED', d.stars]];
+const foot = (d, date) => [`FOLLOWING ${d.following}  ·  STREAK ${d.current}D  ·  BEST ${d.best}D`, `UPDATED ${date}`];
+function desktop(d, date) {
+  step = 0;
+  const W = 1600, H = 300, w = 365;
+  let body = '', defs = '';
+  tiles(d).forEach(([k, l, v], i) => { const t = tile(40 + i * (w + 20), 36, w, 200, k, l, v, 96, 'd' + i); body += t.svg; defs += t.defs; });
+  body += `<text x="40" y="278" font-size="24" font-weight="500" fill="${C.t2}" font-family="${MONO}">${esc(foot(d, date)[0] + '  ·  CONTRIBUTIONS AND STREAKS: LAST 12 MONTHS  ·  ' + foot(d, date)[1])}</text>`;
+  return wrap(W, H, d, body, defs);
+}
+function mobile(d, date) {
+  step = 0;
+  const W = 750, H = 580, w = 325;
+  let body = '', defs = '';
+  tiles(d).forEach(([k, l, v], i) => { const t = tile(40 + (i % 2) * (w + 20), 30 + Math.floor(i / 2) * 240, w, 220, k, l, v, 88, 'm' + i); body += t.svg; defs += t.defs; });
+  const f = foot(d, date);
+  body += `<text x="40" y="540" font-size="24" font-weight="500" fill="${C.t2}" font-family="${MONO}">${esc(f[0])}</text><text x="40" y="568" font-size="22" font-weight="500" fill="${C.t2}" font-family="${MONO}">${esc(f[1] + '  ·  LAST 12 MONTHS')}</text>`;
+  return wrap(W, H, d, body, defs);
 }
 
 try {
   const data = await load();
-  const svg = build(data, new Date().toISOString().slice(0, 10));
+  const date = new Date().toISOString().slice(0, 10);
   const strip = s => s.replace(/UPDATED \d{4}-\d{2}-\d{2}/g, 'UPDATED');
-  const prev = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : '';
-  if (strip(prev) === strip(svg)) console.log('scoreboard unchanged');
-  else {
-    fs.mkdirSync(path.dirname(OUT), { recursive: true });
-    fs.writeFileSync(OUT, svg);
-    console.log('scoreboard written', JSON.stringify({ ...data, langs: data.langs.length }));
+  let changed = 0;
+  for (const [name, build] of [['stats-desktop.svg', desktop], ['stats-mobile.svg', mobile]]) {
+    const file = path.join(OUT_DIR, name);
+    const next = build(data, date);
+    const prev = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : '';
+    if (strip(prev) === strip(next)) continue;
+    fs.mkdirSync(OUT_DIR, { recursive: true });
+    fs.writeFileSync(file, next);
+    changed++;
   }
+  console.log(changed ? 'stats written' : 'stats unchanged', JSON.stringify(data));
 } catch (e) {
-  console.error('scoreboard failed:', e.message); // existing SVG is left untouched
+  console.error('stats failed:', e.message); // existing SVGs are left untouched
   process.exit(1);
 }

@@ -17,7 +17,8 @@ jobs:
         with:
           github_user_name: souravsahapartho
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#2EE6FF&color_dots=#0B1530,#0E5A2B,#13803A,#1B9A47,#7CF29A
+            dist/github-contribution-grid-snake.svg?color_snake=#FF1744&color_dots=#161616,#4A0A12,#8B0000,#D0102F,#FF3030
+            dist/github-contribution-grid-snake-light.svg?color_snake=#8B0000&color_dots=#EDEDED,#FFC9D2,#FF8A9B,#E0203F,#8B0000
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

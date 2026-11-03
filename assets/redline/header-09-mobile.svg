@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 120" role="img" aria-labelledby="t d">
+<title id="t">09 ACHIEVEMENTS</title><desc id="d">Section 09: ACHIEVEMENTS</desc>
+<defs><clipPath id="card"><rect width="750" height="120" rx="20"/></clipPath></defs>
+<style>text{font-family:'Segoe UI',Inter,Roboto,'Helvetica Neue',Arial,sans-serif}.m{font-family:'JBMonoRL','JetBrains Mono','Cascadia Code','SF Mono',Consolas,Menlo,monospace}.sg{font-family:'SGroteskRL','Space Grotesk','Segoe UI',Inter,Roboto,Arial,sans-serif}.fb{transform-box:fill-box;transform-origin:center}.dl{stroke-dasharray:1;animation:draw 1s ease-out both}@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<g clip-path="url(#card)"><rect width="750" height="120" fill="#080808"/><text x="24" y="70" font-size="34" font-weight="600" fill="#FF1744" class="m" textLength="102" lengthAdjust="spacingAndGlyphs">// 09</text><text x="156" y="72" font-size="52" font-weight="700" fill="#F5F5F5" textLength="424.3" lengthAdjust="spacingAndGlyphs">ACHIEVEMENTS</text><path class="dl" pathLength="1" d="M24 98H726" stroke="#FF1744" stroke-opacity=".7" stroke-width="2.5" fill="none"/></g>
+</svg>
