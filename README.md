@@ -9,6 +9,14 @@
 <a href="https://github.com/souravsahapartho"><img src="assets/redline/dock-github.svg" width="13%" alt="GitHub"></a> <a href="https://sourav.com.bd"><img src="assets/redline/dock-website.svg" width="13%" alt="Website"></a> <a href="https://www.linkedin.com/in/souravsahapartho/"><img src="assets/redline/dock-linkedin.svg" width="13%" alt="LinkedIn"></a> <a href="mailto:hello@sourav.com.bd"><img src="assets/redline/dock-email.svg" width="13%" alt="Email hello@sourav.com.bd"></a>
 </p>
 
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner/light.svg">
+  <img src="assets/banner/dark.svg" width="100%" alt="Animated profile banner: ASCII portrait and a terminal introducing Sourav Saha, full-stack developer and CSE student at United International University, Dhaka.">
+</picture>
+</p>
+
 <h3 align="center">
 <picture>
   <source media="(max-width: 600px)" srcset="assets/redline/header-02-mobile.svg">
