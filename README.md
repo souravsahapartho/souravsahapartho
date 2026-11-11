@@ -27,13 +27,12 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/souravsahapartho/uiu-student-brain"><img src="cards/pin-1.svg" width="49.5%" alt="Student Brain. Study planning, GPA forecasting and AI quizzes. I led the Flutter mobile app."></a>
-<a href="https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-"><img src="cards/pin-2.svg" width="49.5%" alt="eLMS. A comprehensive, full-stack Educational Learning Management System (eLMS) featuring role-based dashboards, secure course management, and real-time chat. Built with Node.js, Express, and MySQL."></a>
+<a href="https://github.com/souravsahapartho/UIU-Files"><img src="cards/pin-1.svg" width="49.5%" alt="UIU-Files. A complete collection of my academic files, assignments, and study materials from United International University (UIU)"></a>
+<a href="https://github.com/souravsahapartho/uiu-student-brain"><img src="cards/pin-2.svg" width="49.5%" alt="uiu-student-brain. No description yet."></a>
 </p>
 
 <p align="center">
-<a href="https://github.com/souravsahapartho/UIU-Student-Assistant-Telegram-Bot"><img src="cards/pin-3.svg" width="49.5%" alt="UIU Student Assistant. A Python-powered Telegram assistant for UIU students, featuring CGPA &amp; fee calculators, scholarship estimation, academic information, notices, calendar updates, and useful university resources."></a>
-<a href="https://github.com/souravsahapartho/Human-Emotion-Detection-from-Text"><img src="cards/pin-4.svg" width="49.5%" alt="Human Emotion Detection. Machine learning and NLP-based web app that detects 11 human emotions from text using TF-IDF and XGBoost."></a>
+<a href="https://github.com/souravsahapartho/UIU-Student-Assistant-Telegram-Bot"><img src="cards/pin-3.svg" width="49.5%" alt="UIU-Student-Assistant-Telegram-Bot. A Python-powered Telegram assistant for UIU students, featuring CGPA &amp; fee calculators, scholarship estimation, academic information, notices, calendar updates, and useful university resources."></a>
 </p>
 
 <p align="center">
@@ -41,23 +40,23 @@
 </p>
 
 <p align="center">
-<a href="https://blog.sourav.com.bd/article/gemini-omni-google-flow"><img src="cards/article-1.svg" width="100%" alt="Article: Gemini Omni and Google Flow: The Future of AI-Powered Content Creation"></a>
+<a href="https://blog.sourav.com.bd/article/gemini-omni-google-flow"><img src="cards/article-1.svg" width="100%" alt="Article: Gemini Omni and Google Flow: The Future of AI-Powered Content Creation, May 29, 2026"></a>
 </p>
 
 <p align="center">
-<a href="https://blog.sourav.com.bd/article/instagram-instants"><img src="cards/article-2.svg" width="100%" alt="Article: Instagram Instants Is Here — But Users Are Still Trying to Figure Out Why"></a>
+<a href="https://blog.sourav.com.bd/article/instagram-instants"><img src="cards/article-2.svg" width="100%" alt="Article: Instagram Instants Is Here — But Users Are Still Trying to Figure Out Why, May 25, 2026"></a>
 </p>
 
 <p align="center">
-<a href="https://blog.sourav.com.bd/article/claude-ai-2026"><img src="cards/article-3.svg" width="100%" alt="Article: Why Developers and Power Users Are Switching to Claude in 2026"></a>
+<a href="https://blog.sourav.com.bd/article/claude-ai-2026"><img src="cards/article-3.svg" width="100%" alt="Article: Why Developers and Power Users Are Switching to Claude in 2026, May 20, 2026"></a>
 </p>
 
 <p align="center">
-<a href="https://blog.sourav.com.bd/article/ip-phone"><img src="cards/article-4.svg" width="100%" alt="Article: IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication"></a>
+<a href="https://blog.sourav.com.bd/article/ip-phone"><img src="cards/article-4.svg" width="100%" alt="Article: IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication, Feb 28, 2026"></a>
 </p>
 
 <p align="center">
-<a href="https://blog.sourav.com.bd/article/how-to-buy-bitcoin"><img src="cards/article-5.svg" width="100%" alt="Article: How to Buy Bitcoin: A Beginner&#x27;s Guide"></a>
+<a href="https://blog.sourav.com.bd/article/how-to-buy-bitcoin"><img src="cards/article-5.svg" width="100%" alt="Article: How to Buy Bitcoin: A Beginner&#x27;s Guide, Feb 27, 2026"></a>
 </p>
 
 <p align="center">
@@ -65,11 +64,11 @@
 </p>
 
 <p align="center">
-<img src="cards/chart.svg" width="100%" alt="Contributions per month, Dec 2025 to Nov 2026: 3689 in total. Current streak 1 days, longest 39, 219 active days, busiest day Aug 29, 2026 with 87 contributions.">
+<img src="cards/chart.svg" width="100%" alt="Contributions per month, Dec 2025 to Nov 2026: 3690 in total. Current streak 1 days, longest 39, 219 active days, busiest day Aug 29, 2026 with 87 contributions.">
 </p>
 
 <p align="center">
-<img src="cards/graph.svg" width="100%" alt="Contribution graph for the last year in red: 3768 contributions in the last year.">
+<img src="cards/graph.svg" width="100%" alt="Contribution graph for the last year in red: 3769 contributions in the last year, 4344 all time.">
 </p>
 
 <p align="center">
