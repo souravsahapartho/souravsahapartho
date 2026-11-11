@@ -1,0 +1,59 @@
+name: Profile cards
+
+on:
+  schedule:
+    - cron: "17 18 * * *" # 00:17 in Dhaka (UTC+6), once a day
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "assets/portrait.*"
+      - "requirements.txt"
+      - ".github/workflows/cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install fonttools, Pillow and the Space Grotesk / JetBrains Mono sources
+        run: |
+          pip install -r requirements.txt
+          npm install --no-save --no-package-lock @fontsource/space-grotesk@5 @fontsource/jetbrains-mono@5
+
+      - name: Refresh contribution data
+        run: python scripts/fetch_data.py
+        env:
+          GH_TOKEN: ${{ secrets.SUMMARY_CARDS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+
+      - name: Render cards
+        run: python scripts/render_cards.py
+
+      - name: Commit data and cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data cards
+          git diff --cached --quiet && exit 0
+          git commit -m "chore(cards): refresh contribution data and cards"
+          git pull --rebase origin main
+          git push
