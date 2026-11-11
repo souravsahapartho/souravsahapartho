@@ -45,7 +45,7 @@ ASSET_FONTS = ROOT / "assets" / "fonts"
 P = dict(
     bg="#080808", surf="#111111", surf2="#171717", line="#2A0A0E",
     brand="#FF1744", deep="#C2003A", glow="#FF3030",
-    text="#F5F5F5", mute="#A1A1AA", dim="#71717A",
+    text="#F5F5F5", soft="#D4D4D8", mute="#A1A1AA", dim="#71717A",
 )
 # Contribution graph ramp in the brand colour (same ramp the old snake used).
 RAMP = ["#161616", "#4A0A12", "#8B0000", "#D0102F", "#FF3030"]
@@ -58,10 +58,10 @@ PROFILE = dict(
     pills=["CSE Student", "Full-Stack Developer", "Problem Solver"],
     initials="SS",
 )
-TILES = [  # (file, icon, label, title, subtitle)
-    ("tile-website", "globe", "WEBSITE", "sourav.com.bd", "Projects, articles and contact"),
-    ("tile-linkedin", "linkedin", "LINKEDIN", "souravsahapartho", "Let's connect"),
-    ("tile-blog", "pen", "WRITING", "TechTalk with Sourav", "Tech, AI and digital growth"),
+TILES = [  # (file, icon, label, title, subtitle, link)
+    ("tile-website", "globe", "WEBSITE", "sourav.com.bd", "Projects, articles and contact", "https://sourav.com.bd"),
+    ("tile-linkedin", "linkedin", "LINKEDIN", "souravsahapartho", "Let's connect", "https://www.linkedin.com/in/souravsahapartho/"),
+    ("tile-blog", "pen", "WRITING", "TechTalk with Sourav", "Tech, AI and digital growth", "https://blog.sourav.com.bd"),
 ]
 FEATURED = [  # repo name on GitHub; text here is the fallback when the API has no description
     dict(repo="uiu-student-brain", title="Student Brain", kicker="TEAM ACADEMIC PLATFORM",
@@ -78,6 +78,11 @@ FEATURED = [  # repo name on GitHub; text here is the fallback when the API has 
          tags=["NLP", "TF-IDF", "XGBoost"]),
 ]
 GITHUB_USER = "souravsahapartho"
+ABOUT = ("CSE student at UIU, Dhaka. I build full-stack web apps with Node.js, Express and MySQL, and Android apps "
+         "with Flutter. Most of what I ship serves the UIU community. I also write about tech at TechTalk with Sourav.")
+EDUCATION = dict(degree="B.Sc. in CSE", school="United International University", place="Dhaka, Bangladesh · Ongoing")
+SKILLS = ["JavaScript", "Node.js", "Express", "Flutter", "MySQL", "C", "C++", "Java", "HTML", "CSS"]
+FOOTER = ("Let's build something.", "Open to collaborations and student projects.")
 
 # --------------------------------------------------------------------------- fonts
 FACES = {  # class -> (fontsource package, weight)
@@ -181,6 +186,7 @@ ICONS = {  # 24x24 stroke icons
     "linkedin": '<rect x="2" y="2" width="20" height="20" rx="5"/><path d="M8 10v7M8 6.8v.01M12 17v-4a2.5 2.5 0 0 1 5 0v4M12 10v7"/>',
     "pen": '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>',
     "arrow": '<path d="M7 17L17 7M8 7h9v9"/>',
+    "book": '<path d="M4 19.5V5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2z"/><path d="M4 19.5a2 2 0 0 0 2 2h13"/>',
     "fork": '<path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/>',
     "star": '<path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/>',
 }
@@ -359,8 +365,9 @@ def hero(base: float) -> Card:
 
 
 def tile(i: int, base: float) -> Card:
-    name, ic, label, title, sub = TILES[i]
-    c = Card(name, 300, 150, f"{label.title()}: {title}", f"{label.title()}. {title}. {sub}.", base)
+    name, ic, label, title, sub, _ = TILES[i]
+    nice = {"LINKEDIN": "LinkedIn"}.get(label, label.title())
+    c = Card(name, 300, 150, f"{nice}: {title}", f"{nice}: {title}. {sub}.", base)
     c.frame(18, glow=False)
     c.add(f'<rect {c.at("sweep", 0.1)} x="1" y="1" width="298" height="4" fill="{P["brand"]}"/>')
     c.add(f'<g transform="translate(24 24)"><g {c.at("pop", 0.15)}>{icon(ic, 0, 0, 26, P["brand"], 2)}</g></g>')
@@ -442,37 +449,127 @@ def chart(base: float, data: dict) -> Card:
     return c
 
 
-def repo_card(i: int, base: float, data: dict) -> Card:
-    f = FEATURED[i]
-    info = (data.get("repos") or {}).get(f["repo"], {})
-    blurb = info.get("description") or f["blurb"]
-    c = Card(f"repo-{i+1}", 900, 214, f"{f['title']}: GitHub repository", f"{f['title']}. {blurb}", base)
+def section(i: int, kicker: str, title: str, base: float) -> Card:
+    """A slim heading bar. It carries its own dark background so it reads on GitHub's light theme too."""
+    c = Card(f"section-{i}", 900, 64, title, f"Section: {title}", base)
+    c.frame(16, glow=False)
+    c.text("jb7", kicker, 30, 41, 16, P["brand"], ls=1.5, anim="up")
+    x = 30 + tw("jb7", clean("jb7", kicker), 16, 1.5) + 16
+    c.text("sg7", title, round(x, 1), 44, 30, P["text"], anim="up", off=0.1)
+    lx = x + tw("sg7", clean("sg7", title), 30) + 22
+    c.add(f'<rect {c.at("sweep", 0.3)} x="{lx:.1f}" y="31" width="{868 - lx:.1f}" height="2" rx="1" fill="{P["line"]}"/>')
+    c.add(f'<rect {c.at("sweep", 0.3)} x="{lx:.1f}" y="31" width="64" height="2" rx="1" fill="{P["brand"]}"/>')
+    return c
+
+
+def about(base: float) -> Card:
+    c = Card("about", 900, 250, "About me", f"About me. {ABOUT} {EDUCATION['degree']}, {EDUCATION['school']}, {EDUCATION['place']}.", base)
     c.frame()
-    c.add(f'<rect {c.at("grow", 0.1)} x="1" y="28" width="4" height="158" rx="2" fill="{P["brand"]}"/>')
-    c.text("jb5", f"// {i+1:02d} · {f['kicker']}", 40, 46, 14, P["brand"], ls=1.6, anim="up", off=0.1)
-    c.text("sg7", f["title"], 40, 92, fit("sg7", f["title"], 36, 700), P["text"], anim="up", off=0.2)
-    for k, line in enumerate(wrap("sg5", blurb, 19, 740)):
-        c.text("sg5", line, 40, 126 + k * 25, 19, P["mute"], anim="up", off=0.35 + k * 0.1)
+    c.text("jb5", "// ABOUT ME", 40, 52, 15, P["brand"], ls=2, anim="up", off=0.1)
+    for k, line in enumerate(wrap("sg5", ABOUT, 20, 520, 6)):
+        c.text("sg5", line, 40, 94 + k * 30, 20, P["soft"], anim="up", off=0.2 + k * 0.08)
+    e = EDUCATION
+    c.add(f'<g {c.at("up", 0.4)}><rect x="620" y="38" width="240" height="176" rx="16" fill="{P["surf2"]}" stroke="{P["line"]}" stroke-width="2"/>'
+          f'<rect x="636" y="39" width="44" height="3" rx="1.5" fill="{P["brand"]}"/></g>')
+    c.text("jb5", "EDUCATION", 640, 72, 12, P["mute"], ls=1.5, anim="up", off=0.45)
+    c.text("sg7", e["degree"], 640, 110, fit("sg7", e["degree"], 26, 200, 18), P["text"], anim="up", off=0.5)
+    for k, line in enumerate(wrap("sg5", e["school"], 16, 200, 2)):
+        c.text("sg5", line, 640, 136 + k * 21, 16, P["mute"], anim="up", off=0.55 + k * 0.05)
+    c.text("jb5", e["place"], 640, 192, 12, P["dim"], anim="up", off=0.65)
+    return c
 
-    x = 40
-    for k, tag in enumerate(f["tags"]):
-        tag = clean("jb5", tag)
-        w = tw("jb5", tag, 12.5, 0.4) + 24
-        c.add(f'<g {c.at("up", 0.55 + k * 0.08)}><rect x="{x:.1f}" y="172" width="{w:.1f}" height="28" rx="14" fill="{P["surf2"]}" stroke="{P["line"]}" stroke-width="2"/></g>')
-        c.text("jb5", tag, round(x + 12, 1), 191, 12.5, P["mute"], ls=0.4, anim="up", off=0.6 + k * 0.08)
-        x += w + 10
 
-    # live stats (only when the data file has them)
-    if info:
-        rx = 860
-        for name, val in (("fork", info["forks"]), ("star", info["stars"])):
-            s = str(val)
-            c.text("jb7", s, rx, 191, 14, P["text"], anchor="end", anim="fade", off=0.7)
-            rx -= tw("jb7", s, 14) + 24
-            c.add(f'<g {c.at("fade", 0.7)}>{icon(name, rx, 175, 18, P["brand"], 2)}</g>')
-            rx -= 20
-    c.add(f'<g {c.at("pop", 0.3)}><circle cx="846" cy="50" r="22" fill="none" stroke="{P["brand"]}" stroke-width="2.5"/></g>')
-    c.add(f'<g transform="translate(834 38)">{icon("arrow", 0, 0, 24, P["brand"], 2.2)}</g>')
+def skills(base: float) -> Card:
+    chips, x, y, row_h = [], 40, 84, 52
+    for s in SKILLS:
+        s = clean("jb5", s)
+        w = tw("jb5", s, 15, 0.3) + 52
+        if x + w > 860:
+            x, y = 40, y + row_h
+        chips.append((s, x, y, w))
+        x += w + 12
+    h = y + row_h + 14
+    c = Card("skills", 900, h, "Tech stack", "Tech stack: " + ", ".join(SKILLS) + ".", base)
+    c.frame()
+    c.text("jb5", "// TECH STACK", 40, 52, 15, P["brand"], ls=2, anim="up", off=0.1)
+    for k, (s, cx, cy, w) in enumerate(chips):
+        c.add(f'<g {c.at("pop", 0.2 + k * 0.06)}><rect x="{cx}" y="{cy}" width="{w:.1f}" height="40" rx="20" fill="{P["surf2"]}" stroke="{P["line"]}" stroke-width="2"/>'
+              f'<circle cx="{cx + 20}" cy="{cy + 20}" r="4.5" fill="{P["brand"]}"/></g>')
+        c.text("jb5", s, round(cx + 34, 1), cy + 25, 15, P["soft"], ls=0.3, anim="fade", off=0.25 + k * 0.06)
+    return c
+
+
+def pinned_items(data: dict) -> list[dict]:
+    """Pinned repos from the data file; falls back to the FEATURED list before the first refresh."""
+    if data.get("pinned"):
+        return data["pinned"]
+    out = []
+    for f in FEATURED:
+        info = (data.get("repos") or {}).get(f["repo"], {})
+        out.append(dict(name=f["title"], description=info.get("description") or f["blurb"], language=info.get("language"),
+                        color=None, stars=info.get("stars"), forks=info.get("forks"),
+                        url=info.get("url") or f"https://github.com/{GITHUB_USER}/{f['repo']}"))
+    return out
+
+
+def pinned_card(i: int, base: float, it: dict) -> Card:
+    name, desc = it["name"], (it.get("description") or "No description yet.")
+    c = Card(f"pin-{i + 1}", 440, 160, f"{name}: pinned repository", f"{name}. {desc}", base)
+    c.frame(18, glow=False)
+    c.add(f'<rect {c.at("sweep", 0.1)} x="1" y="1" width="438" height="3" fill="{P["brand"]}"/>')
+    c.add(f'<g transform="translate(22 22)"><g {c.at("pop", 0.15)}>{icon("book", 0, 0, 22, P["brand"], 2)}</g></g>')
+    c.text("sg7", name, 54, 40, fit("sg7", clean("sg7", name), 21, 330, 14), P["text"], anim="up", off=0.2)
+    c.add(f'<g transform="translate(402 22)"><g {c.at("fade", 0.3)}>{icon("arrow", 0, 0, 18, P["mute"], 2.2)}</g></g>')
+    for k, line in enumerate(wrap("sg5", desc, 15, 396, 2)):
+        c.text("sg5", line, 22, 78 + k * 22, 15, P["mute"], anim="up", off=0.3 + k * 0.08)
+
+    y, x = 138, 22
+    lang = it.get("language")
+    if lang:
+        col = it.get("color") or P["brand"]
+        col = col if len(col) == 7 and col.startswith("#") else P["brand"]
+        c.add(f'<circle {c.at("pop", 0.5)} cx="{x + 5}" cy="{y - 4}" r="5.5" fill="{col}"/>')
+        c.text("jb5", lang, x + 18, y, 12.5, P["mute"], anim="fade", off=0.5)
+        x += 18 + tw("jb5", clean("jb5", lang), 12.5) + 22
+    for name_, key in (("star", "stars"), ("fork", "forks")):
+        if it.get(key) is None:
+            continue
+        c.add(f'<g {c.at("fade", 0.55)}>{icon(name_, x, y - 14, 17, P["brand"], 2)}</g>')
+        s = str(it[key])
+        c.text("jb7", s, x + 24, y, 12.5, P["text"], anim="fade", off=0.55)
+        x += 24 + tw("jb7", s, 12.5) + 20
+    return c
+
+
+def article(i: int, base: float, a: dict) -> Card:
+    title = a["title"]
+    date = dt.date.fromisoformat(a["date"]) if a.get("date") else None
+    kick = f"// ARTICLE{' · ' + fmt_date(date).upper() if date else ''}"
+    c = Card(f"article-{i + 1}", 900, 114, title, f"Article: {title}" + (f", {fmt_date(date)}" if date else ""), base)
+    c.frame(18, glow=False)
+    c.add(f'<rect {c.at("grow", 0.1)} x="1" y="24" width="4" height="66" rx="2" fill="{P["brand"]}"/>')
+    c.text("jb5", kick, 40, 40, 13, P["brand"], ls=1.5, anim="up", off=0.1)
+    lines = wrap("sg7", title, 21, 740, 2)
+    ys = [80] if len(lines) == 1 else [72, 97]
+    for line, y in zip(lines, ys):
+        c.text("sg7", line, 40, y, 21, P["text"], anim="up", off=0.2)
+    c.add(f'<g {c.at("pop", 0.3)}><circle cx="838" cy="57" r="22" fill="none" stroke="{P["brand"]}" stroke-width="2.5"/></g>')
+    c.add(f'<g transform="translate(826 45)">{icon("arrow", 0, 0, 24, P["brand"], 2.2)}</g>')
+    return c
+
+
+def footer(base: float) -> Card:
+    c = Card("footer", 900, 130, "Let's build something", f"{FOOTER[0]} {FOOTER[1]}", base)
+    c.frame()
+    c.add(f'<rect {c.at("grow", 0.1)} x="1" y="26" width="4" height="78" rx="2" fill="{P["brand"]}"/>')
+    c.text("sg7", FOOTER[0], 40, 66, 38, P["text"], anim="up", off=0.15)
+    c.text("sg5", FOOTER[1], 40, 100, 19, P["mute"], anim="up", off=0.3)
+    c.add(f'<g {c.at("pop", 0.4)}><circle cx="820" cy="65" r="30" fill="none" stroke="{P["brand"]}" stroke-width="3"/></g>')
+    c.add(f'<g transform="translate(804 49)">{icon("arrow", 0, 0, 32, P["brand"], 2.2)}</g>')
+    b = c.base + 1.2
+    c.add(c.smil(f'<circle cx="820" cy="65" r="30" fill="none" stroke="{P["brand"]}" stroke-width="2" opacity="0">'
+                 f'<animate attributeName="r" values="30;56" dur="3s" begin="{b:.2f}s" repeatCount="indefinite"/>'
+                 f'<animate attributeName="opacity" values=".45;0" dur="3s" begin="{b:.2f}s" repeatCount="indefinite"/></circle>'))
     return c
 
 
@@ -480,13 +577,15 @@ def graph(base: float, data: dict) -> Card:
     days = [(dt.date.fromisoformat(d), n) for d, n in data.get("days", [])]
     counts = {d: n for d, n in days}
     end = days[-1][0] if days else dt.date.today()
-    total = data.get("total") or sum(counts.values())
-    desc = (f"Contribution graph for the last year in red: {total} contributions." if days
-            else "Contribution graph. Data appears after the first daily refresh.")
-    c = Card("graph", 900, 250, "Contribution graph", desc, base)
+    last_year = data.get("total") or sum(counts.values())
+    years = {str(k): v for k, v in (data.get("years") or {}).items()}
+    all_time = data.get("all_time") or sum(years.values())
+    desc = (f"Contribution graph for the last year in red: {last_year} contributions in the last year"
+            + (f", {all_time} all time." if all_time else ".") if days else "Contribution graph. Data appears after the first daily refresh.")
+    c = Card("graph", 900, 368, "Contribution graph", desc, base)
     c.frame()
     c.text("jb5", "// CONTRIBUTION GRAPH", 40, 48, 15, P["brand"], ls=2, anim="up", off=0.1)
-    head = f"{total:,} contributions in the last year" if days else "waiting for the first data refresh"
+    head = f"{last_year:,} in the last year" if days else "waiting for the first data refresh"
     c.text("jb5", head, 860, 48, 13, P["mute"], anchor="end", ls=0.6, anim="up", off=0.15)
 
     nz = sorted(v for v in counts.values() if v > 0)
@@ -515,14 +614,37 @@ def graph(base: float, data: dict) -> Card:
     for r, lab in ((1, "MON"), (3, "WED"), (5, "FRI")):
         c.text("jb5", lab, 40, gy + r * pitch + 9, 10, P["dim"], ls=0.5, anim="fade", off=0.3)
 
-    # legend
     lx = 860 - 5 * pitch - tw("jb5", "MORE", 11, .5) - 8
     c.text("jb5", "MORE", 860, 226, 11, P["dim"], anchor="end", ls=0.5, anim="fade", off=1.0)
     for k in range(5):
         c.add(f'<rect {c.at("pop", 1.0 + k * 0.06)} x="{lx + k * pitch:.1f}" y="216" width="{cell}" height="{cell}" rx="2.5" fill="{RAMP[k]}"/>')
     c.text("jb5", "LESS", lx - 8, 226, 11, P["dim"], anchor="end", ls=0.5, anim="fade", off=1.0)
 
-    # decorative shimmer across the grid
+    # ---- all-time strip under the graph
+    c.add(f'<rect {c.at("fade", 1.1)} x="40" y="248" width="820" height="1" fill="{P["line"]}"/>')
+    c.text("jb5", "ALL-TIME CONTRIBUTIONS", 40, 282, 12, P["mute"], ls=1.4, anim="up", off=1.2)
+    big = clean("sg7", f"{all_time:,}" if all_time else "—")
+    c.text("sg7", big, 40, 334, 46, P["text"], anim="up", off=1.3)
+    if all_time and data.get("joined"):
+        j = dt.date.fromisoformat(data["joined"])
+        sub = f"since {calendar.month_abbr[j.month]} {j.year}"
+    else:
+        sub = "waiting for the first data refresh" if not all_time else "since you joined"
+    c.text("sg5", sub, round(40 + tw("sg7", big, 46) + 14, 1), 334, 18, P["mute"], anim="up", off=1.4)
+    yrs = sorted(years.items())
+    if yrs:
+        colw = min(84.0, 440.0 / len(yrs))
+        x0 = 860 - colw * len(yrs)
+        peak = max(v for _, v in yrs) or 1
+        for k, (y, v) in enumerate(yrs):
+            bx = x0 + k * colw + colw / 2
+            h = max(3.0, 36 * v / peak)
+            base_y = 322
+            c.add(f'<rect {c.at("grow", 1.3 + k * 0.1)} x="{bx - 9:.1f}" y="{322 - h:.1f}" width="18" height="{h:.1f}" rx="4" '
+                  f'fill="{P["brand"] if v == peak else P["deep"]}"/>')
+            c.text("jb5", f"{v:,}", round(bx, 1), round(322 - h - 7, 1), 11, P["mute"], anchor="middle", anim="fade", off=1.6 + k * 0.1)
+            c.text("jb5", y, round(bx, 1), 346, 11, P["dim"], anchor="middle", anim="fade", off=1.5 + k * 0.1)
+
     b = c.base + 1.8
     gw = 53 * pitch
     c.defs.append(f'<linearGradient id="shim"><stop offset="0" stop-color="{P["glow"]}" stop-opacity="0"/><stop offset=".5" stop-color="{P["glow"]}" stop-opacity=".16"/><stop offset="1" stop-color="{P["glow"]}" stop-opacity="0"/></linearGradient>')
@@ -532,31 +654,72 @@ def graph(base: float, data: dict) -> Card:
     return c
 
 
-# --------------------------------------------------------------------------- main
+# --------------------------------------------------------------------------- layout + README
+def readme(rows: list) -> str:
+    out = ["<!-- Generated by scripts/render_cards.py (daily workflow). Edit the layout in main() there, not this file. -->"]
+    for row in rows:
+        items = []
+        for card, href, width in row:
+            img = f'<img src="cards/{card.name}.svg" width="{width}" alt="{html.escape(card.desc, quote=True)}">'
+            items.append(f'<a href="{href}">{img}</a>' if href else img)
+        out.append('<p align="center">\n' + "\n".join(items) + "\n</p>")
+    return "\n\n".join(out) + "\n"
+
+
 def main() -> None:
     data = load_data()
-    cards: list[Card] = [hero(0.0)]
-    cards += [tile(i, 0.45 + i * 0.12) for i in range(len(TILES))]
-    cards.append(chart(1.2, data))
-    cards += [repo_card(i, 1.8 + i * 0.3, data) for i in range(len(FEATURED))]
-    cards.append(graph(1.8 + len(FEATURED) * 0.3 + 0.1, data))
+    rows: list[list[tuple]] = []
 
+    def base(k: int = 0) -> float:  # rows start 0.38s apart, items in a row 0.1s apart: the page plays top to bottom
+        return round(len(rows) * 0.38 + k * 0.1, 2)
+
+    rows.append([(hero(base()), None, "100%")])
+    rows.append([(tile(i, base(i)), TILES[i][5], "32.5%") for i in range(len(TILES))])
+
+    rows.append([(section(1, "// 01", "About", base()), None, "100%")])
+    rows.append([(about(base()), None, "100%")])
+    rows.append([(skills(base()), None, "100%")])
+
+    pins = pinned_items(data)
+    rows.append([(section(2, "// 02", "Pinned projects", base()), None, "100%")])
+    for r in range(0, len(pins), 2):
+        rows.append([(pinned_card(r + k, base(k), pins[r + k]), pins[r + k]["url"], "49.5%") for k in range(min(2, len(pins) - r))])
+
+    arts = data.get("articles") or []
+    if arts:
+        rows.append([(section(3, "// 03", "Latest articles", base()), None, "100%")])
+        for i, a in enumerate(arts):
+            rows.append([(article(i, base(), a), a["url"], "100%")])
+
+    rows.append([(section(4, "// 04", "Activity", base()), None, "100%")])
+    rows.append([(chart(base(), data), None, "100%")])
+    rows.append([(graph(base(), data), None, "100%")])
+    rows.append([(footer(base()), "https://sourav.com.bd", "100%")])
+
+    cards = [c for row in rows for c, _, _ in row]
     OUT.mkdir(parents=True, exist_ok=True)
+    keep = {f"{c.name}.svg" for c in cards}
+    for old in OUT.glob("*.svg"):  # drop cards that no longer exist (e.g. fewer pinned repos)
+        if old.name not in keep:
+            old.unlink()
     for c in cards:
-        (OUT / f"{c.name}.svg").write_text(c.svg(), encoding="utf-8")
-        print(f"{c.name}.svg  {len(c.svg()) / 1024:.1f} KB")
+        svg = c.svg()
+        (OUT / f"{c.name}.svg").write_text(svg, encoding="utf-8")
+        print(f"{c.name}.svg  {len(svg) / 1024:.1f} KB")
 
     if STATIC:  # a README-shaped page to screenshot before pushing
-        def img(c, w="100%"):
-            return f'<img src="{c.name}.svg" style="width:{w}">'
-        tiles = "".join(img(c, "32.5%") for c in cards if c.name.startswith("tile"))
-        rest = "".join(f"<p>{img(c)}</p>" for c in cards if not c.name.startswith(("tile", "hero")))
+        body = "".join(
+            "<div style='display:flex;justify-content:center;gap:1%;margin-bottom:14px'>"
+            + "".join(f"<img src='{c.name}.svg' style='width:{w}'>" for c, _, w in row) + "</div>"
+            for row in rows)
         (OUT / "preview.html").write_text(
             "<!doctype html><meta charset=utf-8><title>README preview</title>"
-            "<body style='background:#0d1117;margin:0;padding:24px'><main style='width:830px;margin:auto;font-size:0'>"
-            f"<p>{img(cards[0])}</p><p style='display:flex;gap:1.25%'>{tiles}</p>{rest}</main>"
-            "<style>p{margin:0 0 16px}</style>", encoding="utf-8")
+            f"<body style='background:#0d1117;margin:0;padding:24px'><main style='width:830px;margin:auto;font-size:0'>{body}</main>",
+            encoding="utf-8")
         print(f"static final frames written to {OUT} (open preview.html and screenshot)")
+    else:
+        (ROOT / "README.md").write_text(readme(rows), encoding="utf-8")
+        print("README.md written")
 
 
 if __name__ == "__main__":
