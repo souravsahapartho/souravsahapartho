@@ -64,7 +64,7 @@
 </p>
 
 <p align="center">
-<img src="cards/chart.svg" width="100%" alt="Contributions per month, Dec 2025 to Nov 2026: 3820 in total. Current streak 4 days, longest 39, 226 active days, busiest day Aug 29, 2026 with 87 contributions.">
+<img src="cards/chart.svg" width="100%" alt="Contributions per month, Dec 2025 to Nov 2026: 3820 in total. Current streak 4 days, longest 39, 224 active days, busiest day Aug 29, 2026 with 87 contributions.">
 </p>
 
 <p align="center">
