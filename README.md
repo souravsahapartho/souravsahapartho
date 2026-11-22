@@ -11,19 +11,7 @@
 </p>
 
 <p align="center">
-<img src="cards/section-1.svg" width="100%" alt="Section: About">
-</p>
-
-<p align="center">
-<img src="cards/about.svg" width="100%" alt="About me. CSE student at UIU, Dhaka. I build full-stack web apps with Node.js, Express and MySQL, and Android apps with Flutter. Most of what I ship serves the UIU community. I also write about tech at TechTalk with Sourav. B.Sc. in CSE, United International University, Dhaka, Bangladesh · Ongoing.">
-</p>
-
-<p align="center">
-<img src="cards/skills.svg" width="100%" alt="Tech stack: JavaScript, Node.js, Express, Flutter, MySQL, C, C++, Java, HTML, CSS.">
-</p>
-
-<p align="center">
-<img src="cards/section-2.svg" width="100%" alt="Section: Pinned projects">
+<img src="cards/intro.svg" width="100%" alt="Section: About About me. CSE student at UIU, Dhaka. I build full-stack web apps with Node.js, Express and MySQL, and Android apps with Flutter. Most of what I ship serves the UIU community. I also write about tech at TechTalk with Sourav. B.Sc. in CSE, United International University, Dhaka, Bangladesh · Ongoing. Tech stack: JavaScript, Node.js, Express, Flutter, MySQL, C, C++, Java, HTML, CSS. Section: Pinned projects">
 </p>
 
 <p align="center">
@@ -60,19 +48,7 @@
 </p>
 
 <p align="center">
-<img src="cards/section-4.svg" width="100%" alt="Section: Activity">
-</p>
-
-<p align="center">
-<img src="cards/chart.svg" width="100%" alt="Contributions per month, Dec 2025 to Nov 2026: 3829 in total. Current streak 5 days, longest 39, 225 active days, busiest day Aug 29, 2026 with 87 contributions.">
-</p>
-
-<p align="center">
-<img src="cards/languages.svg" width="100%" alt="Languages across my repositories: JavaScript 23.4%, HTML 19.3%, TypeScript 16.1%, Dart 14.5%, CSS 11.8%, Python 9.9%, C++ 3.0%, Other 1.9% (bytes of code).">
-</p>
-
-<p align="center">
-<img src="cards/graph.svg" width="100%" alt="Contribution graph for the last year in red: 3880 contributions in the last year, 4483 all time.">
+<img src="cards/activity.svg" width="100%" alt="Section: Activity Contributions per month, Dec 2025 to Nov 2026: 3829 in total. Current streak 5 days, longest 39, 225 active days, busiest day Aug 29, 2026 with 87 contributions. Languages across my repositories: JavaScript 23.4%, HTML 19.3%, TypeScript 16.1%, Dart 14.5%, CSS 11.8%, Python 9.9%, C++ 3.0%, Other 1.9% (bytes of code). Contribution graph for the last year in red: 3880 contributions in the last year, 4483 all time.">
 </p>
 
 <p align="center">

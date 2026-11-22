@@ -24,6 +24,7 @@ import html
 import json
 import os
 import pathlib
+import re
 import shutil
 import subprocess
 import sys
@@ -153,17 +154,36 @@ def pyftsubset_cmd() -> list[str]:
     return [exe] if exe else [sys.executable, "-m", "fontTools.subset"]
 
 
+try:
+    import brotli  # noqa: F401  (lets fontTools write WOFF2, ~30% smaller than WOFF)
+    FONT_FLAVOR, FONT_MIME = "woff2", "font/woff2"
+except ImportError:
+    FONT_FLAVOR, FONT_MIME = "woff", "font/woff"
+
+
 @lru_cache(None)
 def subset_b64(face: str, chars: str) -> str:
     with tempfile.TemporaryDirectory() as td:
-        txt, out = pathlib.Path(td, "chars.txt"), pathlib.Path(td, "out.woff")
+        txt, out = pathlib.Path(td, "chars.txt"), pathlib.Path(td, "out.font")
         txt.write_text(chars, encoding="utf-8")
         subprocess.run(
-            [*pyftsubset_cmd(), str(font_path(face)), f"--text-file={txt}", "--flavor=woff",
+            [*pyftsubset_cmd(), str(font_path(face)), f"--text-file={txt}", f"--flavor={FONT_FLAVOR}",
              "--layout-features=kern", "--no-hinting", f"--output-file={out}"],
             check=True, capture_output=True,
         )
         return base64.b64encode(out.read_bytes()).decode()
+
+
+def font_css(chars_by_face) -> str:
+    """@font-face rules (subset to exactly the characters used) plus the face classes."""
+    faces = ""
+    for face in FACES:
+        if face in chars_by_face:
+            chars = "".join(sorted(chars_by_face[face] | {" "}))
+            faces += (f"@font-face{{font-family:'{face.upper()}';font-weight:{FACES[face][1]};"
+                      f"src:url(data:{FONT_MIME};base64,{subset_b64(face, chars)}) format('{FONT_FLAVOR}')}}")
+    classes = "".join(f".{f}{{font-family:'{f.upper()}',{FALLBACK[f[:2]]};font-weight:{FACES[f][1]}}}" for f in FACES)
+    return faces + classes + BASE_CSS + (STATIC_CSS if STATIC else "")
 
 
 # --------------------------------------------------------------------------- css
@@ -241,19 +261,36 @@ class Card:
                  f'fill="none" stroke="{P["brand"]}" stroke-width="3" stroke-linecap="round" stroke-dasharray="90 910"/>')
 
     def svg(self) -> str:
-        faces = ""
-        for face in FACES:
-            if face in self.chars:
-                chars = "".join(sorted(self.chars[face] | {" "}))
-                fam = face.upper()
-                faces += (f"@font-face{{font-family:'{fam}';font-weight:{FACES[face][1]};"
-                          f"src:url(data:font/woff;base64,{subset_b64(face, chars)}) format('woff')}}")
-        classes = "".join(f".{f}{{font-family:'{f.upper()}',{FALLBACK[f[:2]]};font-weight:{FACES[f][1]}}}" for f in FACES)
-        css = faces + classes + BASE_CSS + (STATIC_CSS if STATIC else "")
+        css = font_css(self.chars)
         return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {self.w} {self.h}" width="{self.w}" height="{self.h}" '
                 f'role="img" aria-labelledby="t d">\n<title id="t">{html.escape(self.title)}</title>'
                 f'<desc id="d">{html.escape(self.desc)}</desc>\n<defs>{"".join(self.defs)}</defs>\n<style>{css}</style>\n'
                 f'<g clip-path="url(#card)">{"".join(self.parts)}</g>\n</svg>\n')
+
+
+class Strip:
+    """Several stacked cards in ONE svg: one request and one copy of the fonts instead of one per card."""
+    def __init__(self, name: str, cards: list, gap: int = 14):
+        self.name, self.cards, self.gap = name, cards, gap
+        self.desc = " ".join(c.desc for c in cards)
+        self.title = cards[0].title
+
+    def svg(self) -> str:
+        chars: dict[str, set] = defaultdict(set)
+        defs, body, y = [], [], 0
+        for k, c in enumerate(self.cards):
+            for f, cs in c.chars.items():
+                chars[f] |= cs
+            def ren(t, k=k):
+                t = re.sub(r'\bid="(\w+)"', lambda m: f'id="{m.group(1)}-{k}"', t)
+                return re.sub(r'url\(#(\w+)\)', lambda m: f'url(#{m.group(1)}-{k})', t)
+            defs += [ren(d) for d in c.defs]
+            body.append(f'<g transform="translate(0 {y})"><g clip-path="url(#card-{k})">{ren("".join(c.parts))}</g></g>')
+            y += c.h + self.gap
+        h, w = y - self.gap, self.cards[0].w
+        return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-labelledby="t d">\n'
+                f'<title id="t">{html.escape(self.title)}</title><desc id="d">{html.escape(self.desc)}</desc>\n'
+                f'<defs>{"".join(defs)}</defs>\n<style>{font_css(chars)}</style>\n{"".join(body)}\n</svg>\n')
 
 
 # --------------------------------------------------------------------------- data
@@ -313,9 +350,9 @@ def portrait_uri() -> str | None:
                 im = Image.open(p).convert("RGB")
                 s = min(im.size)
                 l, t = (im.width - s) // 2, (im.height - s) // 4  # bias toward the top: faces sit high
-                im = im.crop((l, max(0, t), l + s, max(0, t) + s)).resize((260, 260), Image.LANCZOS)
+                im = im.crop((l, max(0, t), l + s, max(0, t) + s)).resize((224, 224), Image.LANCZOS)
                 buf = io.BytesIO()
-                im.save(buf, "JPEG", quality=82, optimize=True)
+                im.save(buf, "JPEG", quality=74, optimize=True)
                 return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
             except ImportError:
                 mime = "image/png" if ext == "png" else "image/webp" if ext == "webp" else "image/jpeg"
@@ -730,35 +767,43 @@ def readme(rows: list) -> str:
 def main() -> None:
     data = load_data()
     rows: list[list[tuple]] = []
+    n = [0]  # cards placed so far: the intro animation plays top to bottom even when cards share a file
 
-    def base(k: int = 0) -> float:  # rows start 0.38s apart, items in a row 0.1s apart: the page plays top to bottom
-        return round(len(rows) * 0.38 + k * 0.1, 2)
+    def base(k: int = 0) -> float:  # rows start 0.38s apart, items in a row 0.1s apart
+        return round(n[0] * 0.38 + k * 0.1, 2)
 
-    rows.append([(hero(base()), None, "100%")])
-    rows.append([(tile(i, base(i)), TILES[i][5], "32.5%") for i in range(len(TILES))])
+    def one(card, href=None, width="100%"):
+        rows.append([(card, href, width)]); n[0] += 1
 
-    rows.append([(section(1, "// 01", "About", base()), None, "100%")])
-    rows.append([(about(base()), None, "100%")])
-    rows.append([(skills(base()), None, "100%")])
+    def strip(name, makers):
+        cs = []
+        for mk in makers:
+            cs.append(mk()); n[0] += 1
+        rows.append([(Strip(name, cs), None, "100%")])
+
+    one(hero(base()))
+    rows.append([(tile(i, base(i)), TILES[i][5], "32.5%") for i in range(len(TILES))]); n[0] += 1
+
+    # About + tech stack + the "Pinned projects" heading share one file (nothing in them is a link)
+    strip("intro", [lambda: section(1, "// 01", "About", base()), lambda: about(base()), lambda: skills(base()),
+                    lambda: section(2, "// 02", "Pinned projects", base())])
 
     pins = pinned_items(data)
-    rows.append([(section(2, "// 02", "Pinned projects", base()), None, "100%")])
     for r in range(0, len(pins), 2):
-        rows.append([(pinned_card(r + k, base(k), pins[r + k]), pins[r + k]["url"], "49.5%") for k in range(min(2, len(pins) - r))])
+        rows.append([(pinned_card(r + k, base(k), pins[r + k]), pins[r + k]["url"], "49.5%") for k in range(min(2, len(pins) - r))]); n[0] += 1
 
     arts = data.get("articles") or []
     if arts:
-        rows.append([(section(3, "// 03", "Latest articles", base()), None, "100%")])
+        one(section(3, "// 03", "Latest articles", base()))
         for i, a in enumerate(arts):
-            rows.append([(article(i, base(), a), a["url"], "100%")])
+            one(article(i, base(), a), a["url"])
 
-    rows.append([(section(4, "// 04", "Activity", base()), None, "100%")])
-    rows.append([(chart(base(), data), None, "100%")])
-    rows.append([(languages_card(base(), data), None, "100%")])
-    rows.append([(graph(base(), data), None, "100%")])
-    rows.append([(footer(base()), "https://sourav.com.bd", "100%")])
+    # Activity heading + chart + languages + contribution graph: one file
+    strip("activity", [lambda: section(4, "// 04", "Activity", base()), lambda: chart(base(), data),
+                       lambda: languages_card(base(), data), lambda: graph(base(), data)])
+    one(footer(base()), "https://sourav.com.bd")
 
-    cards = [c for row in rows for c, _, _ in row]
+    cards = [c for row in rows for c, _, _ in row]  # files to write (a Strip is one file)
     OUT.mkdir(parents=True, exist_ok=True)
     keep = {f"{c.name}.svg" for c in cards}
     for old in OUT.glob("*.svg"):  # drop cards that no longer exist (e.g. fewer pinned repos)
