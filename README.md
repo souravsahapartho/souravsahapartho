@@ -64,15 +64,15 @@
 </p>
 
 <p align="center">
-<img src="cards/chart.svg" width="100%" alt="Contributions per month, Dec 2025 to Nov 2026: 3820 in total. Current streak 4 days, longest 39, 224 active days, busiest day Aug 29, 2026 with 87 contributions.">
+<img src="cards/chart.svg" width="100%" alt="Contributions per month, Dec 2025 to Nov 2026: 3829 in total. Current streak 5 days, longest 39, 225 active days, busiest day Aug 29, 2026 with 87 contributions.">
 </p>
 
 <p align="center">
-<img src="cards/languages.svg" width="100%" alt="Languages across my repositories: HTML 46.7%, JavaScript 20.0%, C++ 10.0%, Python 6.7%, CSS 6.7%, TypeScript 3.3%, Java 3.3%, Hack 3.3% (main language per repo).">
+<img src="cards/languages.svg" width="100%" alt="Languages across my repositories: JavaScript 23.4%, HTML 19.3%, TypeScript 16.1%, Dart 14.5%, CSS 11.8%, Python 9.9%, C++ 3.0%, Other 1.9% (bytes of code).">
 </p>
 
 <p align="center">
-<img src="cards/graph.svg" width="100%" alt="Contribution graph for the last year in red: 3890 contributions in the last year, 4474 all time.">
+<img src="cards/graph.svg" width="100%" alt="Contribution graph for the last year in red: 3880 contributions in the last year, 4483 all time.">
 </p>
 
 <p align="center">
