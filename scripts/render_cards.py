@@ -449,6 +449,67 @@ def chart(base: float, data: dict) -> Card:
     return c
 
 
+LANG_COLORS = ["#FF1744", "#FF7A45", "#FFB020", "#F5F5F5", "#9CA3AF", "#C2003A", "#6B7280", "#4A0A12"]
+LANG_SKIP = {"Jupyter Notebook"}  # notebooks store outputs and images, which would drown out the real code
+
+
+def lang_shares(data: dict):
+    """(rows, basis): rows = [(language, share 0-1)], largest first, top 7 plus 'Other'."""
+    raw = {k: v for k, v in (data.get("languages") or {}).items() if k not in LANG_SKIP}
+    basis = "bytes of code"
+    if not raw:  # no byte stats yet: fall back to each repo's main language
+        raw = defaultdict(int)
+        for r in (data.get("repos") or {}).values():
+            if r.get("language") and r["language"] not in LANG_SKIP:
+                raw[r["language"]] += 1
+        basis = "main language per repo"
+    tot = sum(raw.values()) or 1
+    ranked = sorted(raw.items(), key=lambda kv: -kv[1])
+    top, rest = (ranked, []) if len(ranked) <= 8 else (ranked[:7], ranked[7:])
+    rows = [(k, v / tot) for k, v in top]
+    if rest:
+        rows.append(("Other", sum(v for _, v in rest) / tot))
+    return rows, basis
+
+
+def languages_card(base: float, data: dict) -> Card:
+    rows, basis = lang_shares(data)
+    n_repos = len(data.get("repos") or {})
+    desc = ("Languages across my repositories: " + ", ".join(f"{k} {v * 100:.1f}%" for k, v in rows) + f" ({basis}).") if rows \
+        else "Language breakdown appears after the first daily refresh."
+    c = Card("languages", 900, 336, "Languages used", desc, base)
+    c.frame()
+    c.text("jb5", "// LANGUAGES USED", 40, 52, 15, P["brand"], ls=2, anim="up", off=0.1)
+    if rows:
+        c.text("sg7", clean("sg7", rows[0][0]), 40, 108, 40, P["text"], anim="up", off=0.2)
+        c.text("sg5", f"leads at {rows[0][1] * 100:.1f}%", 40 + tw("sg7", clean("sg7", rows[0][0]), 40) + 14, 108, 19, P["mute"], anim="up", off=0.3)
+    c.text("jb5", f"{n_repos} REPOS · {basis.upper()}", 860, 52, 12, P["dim"], anchor="end", ls=1, anim="fade", off=0.2)
+
+    # stacked bar: segments sweep in left to right
+    x, bar_y, bar_w, gap = 40, 134, 820, 4
+    usable = bar_w - gap * (len(rows) - 1)
+    c.add(f'<rect {c.at("fade", 0.3)} x="40" y="{bar_y}" width="{bar_w}" height="26" rx="13" fill="{P["surf2"]}"/>')
+    c.add('<defs><clipPath id="lb"><rect x="40" y="%d" width="%d" height="26" rx="13"/></clipPath></defs>' % (bar_y, bar_w))
+    segs = []
+    for i, (k, v) in enumerate(rows):
+        w = max(6.0, usable * v)
+        segs.append(f'<rect {c.at("sweep", 0.4 + i * 0.12)} x="{x:.1f}" y="{bar_y}" width="{w:.1f}" height="26" fill="{LANG_COLORS[i]}"/>')
+        x += w + gap
+    c.add('<g clip-path="url(#lb)">' + "".join(segs) + "</g>")
+
+    # legend: 4 columns x 2 rows, each with its own mini bar
+    cols, col_w, y0, row_h = 4, 205, 206, 62
+    for i, (k, v) in enumerate(rows):
+        cx, cy = 40 + (i % cols) * col_w, y0 + (i // cols) * row_h
+        o = 0.6 + i * 0.1
+        c.add(f'<circle {c.at("pop", o)} cx="{cx + 7}" cy="{cy - 5}" r="6" fill="{LANG_COLORS[i]}"/>')
+        c.text("jb5", clean("jb5", k), cx + 22, cy, 15, P["soft"], anim="fade", off=o)
+        c.text("sg7", f"{v * 100:.1f}%", cx + 22, cy + 26, 22, P["text"], anim="up", off=o + 0.05)
+        c.add(f'<rect {c.at("fade", o)} x="{cx}" y="{cy + 38}" width="{col_w - 28}" height="4" rx="2" fill="{P["surf2"]}"/>')
+        c.add(f'<rect {c.at("sweep", o + 0.1)} x="{cx}" y="{cy + 38}" width="{max(3.0, (col_w - 28) * v):.1f}" height="4" rx="2" fill="{LANG_COLORS[i]}"/>')
+    return c
+
+
 def section(i: int, kicker: str, title: str, base: float) -> Card:
     """A slim heading bar. It carries its own dark background so it reads on GitHub's light theme too."""
     c = Card(f"section-{i}", 900, 64, title, f"Section: {title}", base)
@@ -693,6 +754,7 @@ def main() -> None:
 
     rows.append([(section(4, "// 04", "Activity", base()), None, "100%")])
     rows.append([(chart(base(), data), None, "100%")])
+    rows.append([(languages_card(base(), data), None, "100%")])
     rows.append([(graph(base(), data), None, "100%")])
     rows.append([(footer(base()), "https://sourav.com.bd", "100%")])
 

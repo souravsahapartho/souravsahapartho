@@ -83,6 +83,17 @@ def repos():
         page += 1
 
 
+def languages(names):
+    """Bytes of code per language across my own (non-fork) repos, from GitHub's linguist stats."""
+    total = {}
+    for n in names:
+        for lang, b in rest(f"/repos/{LOGIN}/{n}/languages").items():
+            total[lang] = total.get(lang, 0) + b
+    if not total:
+        raise RuntimeError("no language data returned")
+    return {"languages": dict(sorted(total.items(), key=lambda kv: -kv[1]))}
+
+
 def years():
     """All-time total = sum of one calendar-year window per year since the account was created."""
     u = gql("query($login: String!) { user(login: $login) { createdAt contributionsCollection { contributionYears } } }")["user"]
@@ -152,6 +163,10 @@ def main():
             data.update(fn())
         except Exception as exc:
             print(f"warning: {label} not refreshed, keeping previous value: {exc}", file=sys.stderr)
+    try:
+        data.update(languages(list(data.get("repos", {}))))
+    except Exception as exc:
+        print(f"warning: languages not refreshed, keeping previous value: {exc}", file=sys.stderr)
     write(data)
     print(f"wrote {OUT.relative_to(ROOT)}: {len(data['days'])} days, last-year {data['total']}, "
           f"all-time {data.get('all_time')}, {len(data.get('pinned', []))} pinned, {len(data.get('articles', []))} articles")

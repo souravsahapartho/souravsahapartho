@@ -68,6 +68,10 @@
 </p>
 
 <p align="center">
+<img src="cards/languages.svg" width="100%" alt="Languages across my repositories: HTML 46.7%, JavaScript 20.0%, C++ 10.0%, Python 6.7%, CSS 6.7%, TypeScript 3.3%, Java 3.3%, Hack 3.3% (main language per repo).">
+</p>
+
+<p align="center">
 <img src="cards/graph.svg" width="100%" alt="Contribution graph for the last year in red: 3890 contributions in the last year, 4474 all time.">
 </p>
 
