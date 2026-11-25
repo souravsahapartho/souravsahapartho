@@ -188,13 +188,13 @@ def font_css(chars_by_face) -> str:
 
 # --------------------------------------------------------------------------- css
 BASE_CSS = """
-.a{animation-duration:.7s;animation-timing-function:cubic-bezier(.2,.8,.2,1);animation-fill-mode:both;animation-delay:var(--d,0s)}
+.a{animation-duration:.45s;animation-timing-function:cubic-bezier(.2,.8,.2,1);animation-fill-mode:both;animation-delay:var(--d,0s)}
 .up{animation-name:up}@keyframes up{from{opacity:0;transform:translateY(12px)}}
 .fade{animation-name:fade}@keyframes fade{from{opacity:0}}
 .pop{animation-name:pop;transform-box:fill-box;transform-origin:50% 50%}@keyframes pop{from{opacity:0;transform:scale(.4)}}
-.sweep{animation-name:sweep;animation-duration:.9s;transform-box:fill-box;transform-origin:0 50%}@keyframes sweep{from{transform:scaleX(0)}}
-.grow{animation-name:grow;animation-duration:.9s;transform-box:fill-box;transform-origin:50% 100%}@keyframes grow{from{transform:scaleY(0)}}
-.draw{animation-name:draw;animation-duration:1.4s;stroke-dasharray:1}@keyframes draw{from{stroke-dashoffset:1}}
+.sweep{animation-name:sweep;animation-duration:.55s;transform-box:fill-box;transform-origin:0 50%}@keyframes sweep{from{transform:scaleX(0)}}
+.grow{animation-name:grow;animation-duration:.55s;transform-box:fill-box;transform-origin:50% 100%}@keyframes grow{from{transform:scaleY(0)}}
+.draw{animation-name:draw;animation-duration:.9s;stroke-dasharray:1}@keyframes draw{from{stroke-dashoffset:1}}
 .trv{opacity:0;animation:trv 10s linear infinite;animation-delay:var(--d,0s)}
 @keyframes trv{0%{opacity:1;stroke-dashoffset:0}22%{opacity:1;stroke-dashoffset:-1000}22.1%,100%{opacity:0;stroke-dashoffset:-1000}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.smil{display:none}}
@@ -227,7 +227,7 @@ class Card:
         self.chars: dict[str, set] = defaultdict(set)
 
     def d(self, off: float = 0.0) -> str:
-        return f"{self.base + off:.2f}"
+        return f"{self.base + off * 0.5:.2f}"
 
     def add(self, s: str):
         self.parts.append(s)
@@ -640,27 +640,36 @@ def pinned_card(i: int, base: float, it: dict) -> Card:
 
 
 def article(i: int, base: float, a: dict) -> Card:
-    """Compact half-width article card: date, up to three title lines, arrow. Two sit side by side."""
+    """Half-width article card: date pill, big ghost number, two-line title, read prompt."""
     title = a["title"]
     date = dt.date.fromisoformat(a["date"]) if a.get("date") else None
-    c = Card(f"article-{i + 1}", 440, 112, title, f"Article: {title}" + (f", {fmt_date(date)}" if date else ""), base)
-    c.frame(18, glow=False)
-    c.add(f'<rect {c.at("sweep", 0.1)} x="1" y="1" width="438" height="3" fill="{P["brand"]}"/>')
-    c.text("jb5", fmt_date(date).upper() if date else "ARTICLE", 22, 34, 12.5, P["brand"], ls=1.2, anim="up", off=0.1)
-    c.add(f'<g transform="translate(402 18)"><g {c.at("fade", 0.3)}>{icon("arrow", 0, 0, 18, P["mute"], 2.2)}</g></g>')
-    for k, line in enumerate(wrap("sg7", title, 17, 396, 3)):
-        c.text("sg7", line, 22, 62 + k * 21, 17, P["text"], anim="up", off=0.2 + k * 0.08)
+    c = Card(f"art-{i + 1}", 440, 152, title, f"Article: {title}" + (f", {fmt_date(date)}" if date else ""), base)
+    c.frame(20, glow=False)
+    c.add(f'<rect {c.at("sweep", 0.05)} x="1" y="1" width="438" height="3" fill="{P["brand"]}"/>')
+    num = f"{i + 1:02d}"
+    c.add(f'<text class="sg7 a fade" style="--d:{c.d(0.1)}s" x="418" y="62" text-anchor="end" font-size="54" fill="none" stroke="{P["brand"]}" '
+          f'stroke-opacity=".4" stroke-width="1.5">{num}</text>')
+    c.chars["sg7"].update(num)
+    label = fmt_date(date).upper() if date else "ARTICLE"
+    pw = tw("jb5", clean("jb5", label), 12, 1) + 34
+    c.add(f'<g {c.at("up", 0.05)}><rect x="22" y="20" width="{pw:.1f}" height="28" rx="14" fill="{P["surf2"]}" stroke="{P["line"]}" stroke-width="2"/>'
+          f'<circle cx="38" cy="34" r="3.5" fill="{P["brand"]}"/></g>')
+    c.text("jb5", label, 50, 38.5, 12, P["soft"], ls=1, anim="up", off=0.1)
+    for k, line in enumerate(wrap("sg7", title, 18, 396, 2)):
+        c.text("sg7", line, 22, 82 + k * 23, 18, P["text"], anim="up", off=0.15 + k * 0.05)
+    c.add(f'<g transform="translate(22 124)"><g {c.at("fade", 0.3)}>{icon("arrow", 0, 0, 16, P["brand"], 2.4)}</g></g>')
+    c.text("jb7", "READ", 44, 137, 12, P["brand"], ls=2, anim="fade", off=0.3)
     return c
 
 
 def articles_more(i: int, base: float) -> Card:
-    c = Card(f"article-{i + 1}", 440, 112, "All articles", "All articles on the TechTalk with Sourav blog.", base)
-    c.frame(18, glow=False)
-    c.add(f'<rect {c.at("sweep", 0.1)} x="1" y="1" width="438" height="3" fill="{P["deep"]}"/>')
-    c.add(f'<g {c.at("pop", 0.2)}><circle cx="66" cy="56" r="26" fill="none" stroke="{P["brand"]}" stroke-width="2.5"/></g>')
-    c.add(f'<g transform="translate(54 44)">{icon("arrow", 0, 0, 24, P["brand"], 2.2)}</g>')
-    c.text("sg7", "Read all articles", 110, 52, 21, P["text"], anim="up", off=0.25)
-    c.text("jb5", "blog.sourav.com.bd", 110, 78, 14, P["mute"], anim="up", off=0.35)
+    c = Card(f"art-{i + 1}", 440, 152, "All articles", "All articles on the TechTalk with Sourav blog.", base)
+    c.frame(20, glow=False)
+    c.add(f'<rect {c.at("sweep", 0.05)} x="1" y="1" width="438" height="3" fill="{P["deep"]}"/>')
+    c.add(f'<g {c.at("pop", 0.1)}><circle cx="220" cy="60" r="26" fill="none" stroke="{P["brand"]}" stroke-width="2.5"/></g>')
+    c.add(f'<g transform="translate(207 47)">{icon("arrow", 0, 0, 26, P["brand"], 2.2)}</g>')
+    c.text("sg7", "All articles", 220, 118, 20, P["text"], anchor="middle", anim="up", off=0.15)
+    c.text("jb5", "blog.sourav.com.bd", 220, 137, 12.5, P["mute"], anchor="middle", anim="up", off=0.2)
     return c
 
 
@@ -777,8 +786,8 @@ def main() -> None:
     rows: list[list[tuple]] = []
     n = [0]  # cards placed so far: the intro animation plays top to bottom even when cards share a file
 
-    def base(k: int = 0) -> float:  # rows start 0.38s apart, items in a row 0.1s apart
-        return round(n[0] * 0.38 + k * 0.1, 2)
+    def base(k: int = 0) -> float:  # rows start 0.1s apart (capped at 0.9s so late cards never wait), items in a row 0.05s apart
+        return round(min(n[0] * 0.1, 0.9) + k * 0.05, 2)
 
     def one(card, href=None, width="100%"):
         rows.append([(card, href, width)]); n[0] += 1
