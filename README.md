@@ -24,31 +24,26 @@
 </p>
 
 <p align="center">
-<img src="cards/section-3.svg" width="100%" alt="Section: Latest articles">
-</p>
-
-<p align="center">
-<a href="https://blog.sourav.com.bd/article/gemini-omni-google-flow"><img src="cards/article-1.svg" width="100%" alt="Article: Gemini Omni and Google Flow: The Future of AI-Powered Content Creation, May 29, 2026"></a>
-</p>
-
-<p align="center">
-<a href="https://blog.sourav.com.bd/article/instagram-instants"><img src="cards/article-2.svg" width="100%" alt="Article: Instagram Instants Is Here — But Users Are Still Trying to Figure Out Why, May 25, 2026"></a>
-</p>
-
-<p align="center">
-<a href="https://blog.sourav.com.bd/article/claude-ai-2026"><img src="cards/article-3.svg" width="100%" alt="Article: Why Developers and Power Users Are Switching to Claude in 2026, May 20, 2026"></a>
-</p>
-
-<p align="center">
-<a href="https://blog.sourav.com.bd/article/ip-phone"><img src="cards/article-4.svg" width="100%" alt="Article: IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication, Feb 28, 2026"></a>
-</p>
-
-<p align="center">
-<a href="https://blog.sourav.com.bd/article/how-to-buy-bitcoin"><img src="cards/article-5.svg" width="100%" alt="Article: How to Buy Bitcoin: A Beginner&#x27;s Guide, Feb 27, 2026"></a>
-</p>
-
-<p align="center">
 <img src="cards/activity.svg" width="100%" alt="Section: Activity Contributions per month, Dec 2025 to Nov 2026: 3895 in total. Current streak 7 days, longest 39, 227 active days, busiest day Aug 29, 2026 with 87 contributions. Languages across my repositories: JavaScript 22.2%, HTML 18.4%, TypeScript 18.0%, Dart 13.8%, Python 11.5%, CSS 11.4%, C++ 2.9%, Other 1.8% (bytes of code). Contribution graph for the last year in red: 3946 contributions in the last year, 4549 all time.">
+</p>
+
+<p align="center">
+<img src="cards/section-4.svg" width="100%" alt="Section: Latest articles">
+</p>
+
+<p align="center">
+<a href="https://blog.sourav.com.bd/article/gemini-omni-google-flow"><img src="cards/article-1.svg" width="49.5%" alt="Article: Gemini Omni and Google Flow: The Future of AI-Powered Content Creation, May 29, 2026"></a>
+<a href="https://blog.sourav.com.bd/article/instagram-instants"><img src="cards/article-2.svg" width="49.5%" alt="Article: Instagram Instants Is Here — But Users Are Still Trying to Figure Out Why, May 25, 2026"></a>
+</p>
+
+<p align="center">
+<a href="https://blog.sourav.com.bd/article/claude-ai-2026"><img src="cards/article-3.svg" width="49.5%" alt="Article: Why Developers and Power Users Are Switching to Claude in 2026, May 20, 2026"></a>
+<a href="https://blog.sourav.com.bd/article/ip-phone"><img src="cards/article-4.svg" width="49.5%" alt="Article: IP Phone Systems Drive Global Shift Toward Cloud-Based Business Communication, Feb 28, 2026"></a>
+</p>
+
+<p align="center">
+<a href="https://blog.sourav.com.bd/article/how-to-buy-bitcoin"><img src="cards/article-5.svg" width="49.5%" alt="Article: How to Buy Bitcoin: A Beginner&#x27;s Guide, Feb 27, 2026"></a>
+<a href="https://blog.sourav.com.bd"><img src="cards/article-6.svg" width="49.5%" alt="All articles on the TechTalk with Sourav blog."></a>
 </p>
 
 <p align="center">

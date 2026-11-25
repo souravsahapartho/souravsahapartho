@@ -640,19 +640,27 @@ def pinned_card(i: int, base: float, it: dict) -> Card:
 
 
 def article(i: int, base: float, a: dict) -> Card:
+    """Compact half-width article card: date, up to three title lines, arrow. Two sit side by side."""
     title = a["title"]
     date = dt.date.fromisoformat(a["date"]) if a.get("date") else None
-    kick = f"// ARTICLE{' · ' + fmt_date(date).upper() if date else ''}"
-    c = Card(f"article-{i + 1}", 900, 114, title, f"Article: {title}" + (f", {fmt_date(date)}" if date else ""), base)
+    c = Card(f"article-{i + 1}", 440, 112, title, f"Article: {title}" + (f", {fmt_date(date)}" if date else ""), base)
     c.frame(18, glow=False)
-    c.add(f'<rect {c.at("grow", 0.1)} x="1" y="24" width="4" height="66" rx="2" fill="{P["brand"]}"/>')
-    c.text("jb5", kick, 40, 40, 13, P["brand"], ls=1.5, anim="up", off=0.1)
-    lines = wrap("sg7", title, 21, 740, 2)
-    ys = [80] if len(lines) == 1 else [72, 97]
-    for line, y in zip(lines, ys):
-        c.text("sg7", line, 40, y, 21, P["text"], anim="up", off=0.2)
-    c.add(f'<g {c.at("pop", 0.3)}><circle cx="838" cy="57" r="22" fill="none" stroke="{P["brand"]}" stroke-width="2.5"/></g>')
-    c.add(f'<g transform="translate(826 45)">{icon("arrow", 0, 0, 24, P["brand"], 2.2)}</g>')
+    c.add(f'<rect {c.at("sweep", 0.1)} x="1" y="1" width="438" height="3" fill="{P["brand"]}"/>')
+    c.text("jb5", fmt_date(date).upper() if date else "ARTICLE", 22, 34, 12.5, P["brand"], ls=1.2, anim="up", off=0.1)
+    c.add(f'<g transform="translate(402 18)"><g {c.at("fade", 0.3)}>{icon("arrow", 0, 0, 18, P["mute"], 2.2)}</g></g>')
+    for k, line in enumerate(wrap("sg7", title, 17, 396, 3)):
+        c.text("sg7", line, 22, 62 + k * 21, 17, P["text"], anim="up", off=0.2 + k * 0.08)
+    return c
+
+
+def articles_more(i: int, base: float) -> Card:
+    c = Card(f"article-{i + 1}", 440, 112, "All articles", "All articles on the TechTalk with Sourav blog.", base)
+    c.frame(18, glow=False)
+    c.add(f'<rect {c.at("sweep", 0.1)} x="1" y="1" width="438" height="3" fill="{P["deep"]}"/>')
+    c.add(f'<g {c.at("pop", 0.2)}><circle cx="66" cy="56" r="26" fill="none" stroke="{P["brand"]}" stroke-width="2.5"/></g>')
+    c.add(f'<g transform="translate(54 44)">{icon("arrow", 0, 0, 24, P["brand"], 2.2)}</g>')
+    c.text("sg7", "Read all articles", 110, 52, 21, P["text"], anim="up", off=0.25)
+    c.text("jb5", "blog.sourav.com.bd", 110, 78, 14, P["mute"], anim="up", off=0.35)
     return c
 
 
@@ -792,15 +800,16 @@ def main() -> None:
     for r in range(0, len(pins), 2):
         rows.append([(pinned_card(r + k, base(k), pins[r + k]), pins[r + k]["url"], "49.5%") for k in range(min(2, len(pins) - r))]); n[0] += 1
 
-    arts = data.get("articles") or []
-    if arts:
-        one(section(3, "// 03", "Latest articles", base()))
-        for i, a in enumerate(arts):
-            one(article(i, base(), a), a["url"])
-
     # Activity heading + chart + languages + contribution graph: one file
-    strip("activity", [lambda: section(4, "// 04", "Activity", base()), lambda: chart(base(), data),
+    strip("activity", [lambda: section(3, "// 03", "Activity", base()), lambda: chart(base(), data),
                        lambda: languages_card(base(), data), lambda: graph(base(), data)])
+    arts = (data.get("articles") or [])[:5]
+    if arts:  # compact two-column grid, placed below the activity charts
+        one(section(4, "// 04", "Latest articles", base()))
+        cells = [(article(i, base(i % 2), a), a["url"]) for i, a in enumerate(arts)]
+        cells.append((articles_more(len(arts), base(len(arts) % 2)), "https://blog.sourav.com.bd"))
+        for r in range(0, len(cells), 2):
+            rows.append([(c, href, "49.5%") for c, href in cells[r:r + 2]]); n[0] += 1
     one(footer(base()), "https://sourav.com.bd")
 
     cards = [c for row in rows for c, _, _ in row]  # files to write (a Strip is one file)
