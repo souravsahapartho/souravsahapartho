@@ -48,7 +48,7 @@
 </p>
 
 <p align="center">
-<img src="cards/activity.svg" width="100%" alt="Section: Activity Contributions per month, Dec 2025 to Nov 2026: 3862 in total. Current streak 6 days, longest 39, 226 active days, busiest day Aug 29, 2026 with 87 contributions. Languages across my repositories: JavaScript 22.2%, HTML 18.4%, TypeScript 17.9%, Dart 13.8%, Python 11.5%, CSS 11.4%, C++ 2.9%, Other 1.8% (bytes of code). Contribution graph for the last year in red: 3913 contributions in the last year, 4516 all time.">
+<img src="cards/activity.svg" width="100%" alt="Section: Activity Contributions per month, Dec 2025 to Nov 2026: 3895 in total. Current streak 7 days, longest 39, 227 active days, busiest day Aug 29, 2026 with 87 contributions. Languages across my repositories: JavaScript 22.2%, HTML 18.4%, TypeScript 18.0%, Dart 13.8%, Python 11.5%, CSS 11.4%, C++ 2.9%, Other 1.8% (bytes of code). Contribution graph for the last year in red: 3946 contributions in the last year, 4549 all time.">
 </p>
 
 <p align="center">
