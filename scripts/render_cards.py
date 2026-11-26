@@ -20,6 +20,7 @@ import base64
 import bisect
 import calendar
 import datetime as dt
+import hashlib
 import html
 import json
 import os
@@ -612,7 +613,9 @@ def pinned_items(data: dict) -> list[dict]:
 
 def pinned_card(i: int, base: float, it: dict) -> Card:
     name, desc = it["name"], (it.get("description") or "No description yet.")
-    c = Card(f"pin-{i + 1}", 440, 160, f"{name}: pinned repository", f"{name}. {desc}", base)
+    # the content hash gives a changed card a new URL, so GitHub's image cache can't show the old one
+    tag = hashlib.sha1(json.dumps(it, sort_keys=True).encode()).hexdigest()[:8]
+    c = Card(f"pin-{i + 1}-{tag}", 440, 160, f"{name}: pinned repository", f"{name}. {desc}", base)
     c.frame(18, glow=False)
     c.add(f'<rect {c.at("sweep", 0.1)} x="1" y="1" width="438" height="3" fill="{P["brand"]}"/>')
     c.add(f'<g transform="translate(22 22)"><g {c.at("pop", 0.15)}>{icon("book", 0, 0, 22, P["brand"], 2)}</g></g>')

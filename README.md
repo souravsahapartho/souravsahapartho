@@ -15,12 +15,12 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/souravsahapartho/UIU-Files"><img src="cards/pin-1.svg" width="49.5%" alt="UIU-Files. A complete collection of my academic files, assignments, and study materials from United International University (UIU)"></a>
-<a href="https://github.com/souravsahapartho/uiu-student-brain"><img src="cards/pin-2.svg" width="49.5%" alt="uiu-student-brain. No description yet."></a>
+<a href="https://github.com/souravsahapartho/UIU-Files"><img src="cards/pin-1-4c74b0ac.svg" width="49.5%" alt="UIU-Files. A complete collection of my academic files, assignments, and study materials from United International University (UIU)"></a>
+<a href="https://github.com/souravsahapartho/uiu-student-brain"><img src="cards/pin-2-fc043b68.svg" width="49.5%" alt="uiu-student-brain. No description yet."></a>
 </p>
 
 <p align="center">
-<a href="https://github.com/souravsahapartho/UIU-Student-Assistant-Telegram-Bot"><img src="cards/pin-3.svg" width="49.5%" alt="UIU-Student-Assistant-Telegram-Bot. A Python-powered Telegram assistant for UIU students, featuring CGPA &amp; fee calculators, scholarship estimation, academic information, notices, calendar updates, and useful university resources."></a>
+<a href="https://github.com/souravsahapartho/UIU-Student-Assistant-Telegram-Bot"><img src="cards/pin-3-c82ad848.svg" width="49.5%" alt="UIU-Student-Assistant-Telegram-Bot. A Python-powered Telegram assistant for UIU students, featuring CGPA &amp; fee calculators, scholarship estimation, academic information, notices, calendar updates, and useful university resources."></a>
 </p>
 
 <p align="center">

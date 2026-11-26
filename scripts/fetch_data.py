@@ -151,6 +151,22 @@ def write(data):
     OUT.write_text("{\n" + body + "\n}\n", encoding="utf-8")
 
 
+def sync_pins():
+    """--pins-only: rewrite just the pinned list, and tell the workflow whether it changed."""
+    if not TOKEN:
+        sys.exit("GH_TOKEN is required")
+    data = json.loads(OUT.read_text(encoding="utf-8"))
+    fresh = pinned()["pinned"]
+    changed = fresh != data.get("pinned")
+    if changed:
+        data["pinned"] = fresh
+        write(data)
+    if os.environ.get("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+            fh.write(f"changed={str(changed).lower()}" + chr(10))
+    print(("pins changed: " if changed else "pins unchanged: ") + ", ".join(p["name"] for p in fresh))
+
+
 def main():
     if not TOKEN:
         sys.exit("GH_TOKEN is required")
@@ -174,6 +190,6 @@ def main():
 
 if __name__ == "__main__":
     try:
-        main()
+        sync_pins() if "--pins-only" in sys.argv else main()
     except Exception as exc:
         sys.exit(f"fetch failed: {exc}")

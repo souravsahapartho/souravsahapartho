@@ -1,0 +1,55 @@
+name: Sync pinned repos
+
+# GitHub sends no event when pins change, so this polls. It only renders and commits when they differ.
+# For an immediate update: Actions -> "Sync pinned repos" -> Run workflow.
+on:
+  schedule:
+    - cron: "3-58/5 * * * *" # every 5 minutes at most; GitHub often delays scheduled runs
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-pins
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Check pinned repositories
+        id: pins
+        run: python3 scripts/fetch_data.py --pins-only
+        env:
+          GH_TOKEN: ${{ secrets.SUMMARY_CARDS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+
+      - uses: actions/setup-python@v5
+        if: steps.pins.outputs.changed == 'true'
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        if: steps.pins.outputs.changed == 'true'
+        with:
+          node-version: 20
+
+      - name: Render and commit
+        if: steps.pins.outputs.changed == 'true'
+        run: |
+          pip install -r requirements.txt
+          npm install --no-save --no-package-lock @fontsource/space-grotesk@5 @fontsource/jetbrains-mono@5
+          python scripts/render_cards.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data cards README.md
+          git diff --cached --quiet && exit 0
+          git commit -m "chore(cards): sync pinned repositories"
+          git pull --rebase origin main
+          git push
