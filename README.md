@@ -21,10 +21,11 @@
 
 <p align="center">
 <a href="https://github.com/souravsahapartho/UIU-Student-Assistant-Telegram-Bot"><img src="cards/pin-3-c82ad848.svg" width="49.5%" alt="UIU-Student-Assistant-Telegram-Bot. A Python-powered Telegram assistant for UIU students, featuring CGPA &amp; fee calculators, scholarship estimation, academic information, notices, calendar updates, and useful university resources."></a>
+<a href="https://github.com/souravsahapartho/UIU-Learning-Management-System-LMS-"><img src="cards/pin-4-e0e3b790.svg" width="49.5%" alt="UIU-Learning-Management-System-LMS-. A comprehensive, full-stack Educational Learning Management System (eLMS) featuring role-based dashboards, secure course management, and real-time chat. Built with Node.js, Express, and MySQL."></a>
 </p>
 
 <p align="center">
-<img src="cards/activity.svg" width="100%" alt="Section: Activity Contributions per month, Dec 2025 to Nov 2026: 3937 in total. Current streak 9 days, longest 39, 229 active days, busiest day Aug 29, 2026 with 87 contributions. Languages across my repositories: JavaScript 22.3%, HTML 18.2%, TypeScript 17.9%, Dart 13.6%, Python 12.0%, CSS 11.3%, C++ 2.8%, Other 1.8% (bytes of code). Contribution graph for the last year in red: 3988 contributions in the last year, 4591 all time.">
+<img src="cards/activity.svg" width="100%" alt="Section: Activity Contributions per month, Dec 2025 to Nov 2026: 3923 in total. Current streak 9 days, longest 39, 229 active days, busiest day Aug 29, 2026 with 87 contributions. Languages across my repositories: JavaScript 23.6%, HTML 19.2%, TypeScript 16.0%, Dart 14.4%, CSS 11.7%, Python 10.1%, C++ 3.0%, Other 1.9% (bytes of code). Contribution graph for the last year in red: 3974 contributions in the last year, 4577 all time.">
 </p>
 
 <p align="center">
